@@ -1,1 +1,2 @@
 print('HEllO')
+print('hi')
