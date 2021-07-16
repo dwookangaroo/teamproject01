@@ -4,32 +4,79 @@
     <meta charset="UTF-8">
     <title>메인 화면 입니다.</title>
     <style>
-        h2 {
-            background-color: black;
-            color:gray;
+        body {
+            background-color: #1e1f21;
+            }
+        h1 {
+            color:#03c75a;
+        }
+        tr {
+            color: white;
+            }
+        div {
+        margin-left:50px;
+        }
+        button {
+            margin: auto;
+            width:15%;
+            background-color: #4CAF50;
+            color: white;
+            padding:15px 32px;
+            font-size : 24px;
+            border-radius : 8px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            }
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        .button1:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
         }
         table {
-            margin-top: 50px;
+            margin-top: 10px;
+            margin-left: 130px;
         }
     </style>
 </head>
 <body>
-<h2 align="left" > 소년범죄에 대해서</h2><br>
-<button type="button" align="left">연도별</button>
-<button type="button" align="left"> 범죄별</button>
+<h1 align="left" > 소년범죄에 대해서</h1><br>
+<div align="left">
+<button type="button" class="button button1" align="center">재범률</button>
+<button type="button" class="button button2" align="center">재범기간</button>
+<button type="button" class="button button2" align="center">해외범죄율</button>
+<button type="button" class="button button2" align="center">1</button>
+<button type="button" class="button button2" align="center">2</button>
+<button type="button" class="button button2" align="center">게시판</button>
+</div>
+<br><br>
 <table  width="150">
     <thead>
-        <td><img src="https://news.imaeil.com/inc/photos/2021/05/13/2021051316090049900_l.jpg" width="300" height="300"></td>
+        <td><img src="https://news.imaeil.com/inc/photos/2021/05/13/2021051316090049900_l.jpg" width="400" height="400"></td>
         <tr height="50" align="center">
             <th>'경북 포항 여중생 A양 집단폭행 및 조건만남 강요 사건의‥<a href="https://news.imaeil.com/Society/2021070816364541154">기사보기</a></th>
             </th>
         </tr>
-        <td><img src="http://image.kmib.co.kr/online_image/2021/0618/2021061717365239776_1623919013_0015962388.jpg" width="300" height="300" </td>
+        <td><img src="http://image.kmib.co.kr/online_image/2021/0618/2021061717365239776_1623919013_0015962388.jpg" width="400" height="400" </td>
         <tr height="50" align="center">
             <th> “나 촉법소년인데 왜…” 13세, 보호관찰 안 지켜→소년원행 <a href="http://news.kmib.co.kr/article/view.asp?arcid=0015962388&code=61121211&cp=nv">기사보기</a></th>
         </tr>
+
+
     </thead>
 </table>
-
+   <!--<img src="static/img/graph.png">-->
 </body>
 </html>
