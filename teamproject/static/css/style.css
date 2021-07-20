@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    /*background-color: white;*/
+    background-image: url("../../static/img/bg.jpg");
     }
 h1 {
     padding: 0.7rem;
@@ -10,6 +11,9 @@ h1 {
 }
 tr {
     color: black;
+    }
+    th{
+    color:white;
     }
 div {
 margin-left:100px;
@@ -59,7 +63,7 @@ footer {
     background-color: #122139;
     }
 a {
-
+ color: white;
 }
 a1 {
     color: white;
