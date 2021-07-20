@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title> 범죄의 재범률</title>
+    <link rel="stylesheet" href="{% static 'css/recidivism.css' %}">
+</head>
+<body>
+<h1 align="center" > 소년범죄에 대해서</h1><br>
+    <div align="left">
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범률</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄율</button>
+        <button type="button" class="button button" align="center">1</button>
+        <button type="button" class="button button" align="center">2</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
+    </div>
+    <img src="../../static/img/graph.png" style="margin-left:150px">
+</body>
+<footer align="center">
+    <address>
+      <a href="http://www.bitacademy.com/"> <img src="http://www.bitacademy.com/Images/Btns/btn_footer_LogoBitacademy.png">
+        </a><br></address>
+        <a1> 서울특별시 서초구 서초대로74길33 비트빌3층</a1> <br>
+        <a1>copyright by © 2021. 강동우, 김준형, 박정환, 이찬우 </a1> <br>
+        <a href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null" style="color:white">청소년범죄통계</a>
+        <a href="https://www.cyber1388.kr:447/" style="color:white">청소년사이버상담센터</a>
+        <a href="https://www.kyci.or.kr/userSite/index.asp" style="color:white">한국청소년상담복지개발원</a>
+        <a href="http://www.bumbang.or.kr/" style="color:white">청소년범죄예방위원전국연합회</a>
+</footer>
+</html>
