@@ -3,11 +3,11 @@ h1 {
     border-left: 5px solid #2196f3;
     background-color: #122139;
     color: white;
-    width:1800px;
+    width:100%;
 }
 div {
     margin-left:100px;
-    width:1800px;
+    width:100%;
     position:relative;
 }
 button {

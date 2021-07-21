@@ -15,6 +15,7 @@ plt.pie(frequency,
              autopct=lambda p: '{:.2f}%'.format(p),
              wedgeprops=dict(width=0.5)
              )
-plt.title("성인 기간 재범률", fontsize=25)
+plt.title("성인 기간 재범기간", fontsize=25)
 plt.legend(df2['재범기간'])
+plt.savefig('recidivism.png')
 plt.show()
