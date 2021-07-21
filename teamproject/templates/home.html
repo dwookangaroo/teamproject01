@@ -44,7 +44,7 @@
         .button1:hover {
             background-color: #122139;
             color: white;
-
+            cursor:pointer;
         }
         .button2 {
             background-color: white;
@@ -55,7 +55,7 @@
         .button2:hover {
             background-color: #122139;
             color: white;
-
+            cursor:pointer;
         }
         table {
             margin-top: 0px;
@@ -79,7 +79,7 @@
 <button type="button" class="button button2" align="center">재범기간</button>
 <button type="button" class="button button2" align="center">해외범죄율</button>
 <button type="button" class="button button2" align="center">1</button>
-<button type="button" class="button button2" align="center">2</button>
+<button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정 전후 비교</button>
 <button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
 </div>
 <br>

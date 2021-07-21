@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 
@@ -9,3 +10,7 @@ def home(request):
 
 def board_view(request):
     return render(request, 'index.html')
+
+
+def compare_view(request):
+    return render(request, 'compare.html')
