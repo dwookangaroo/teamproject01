@@ -1,0 +1,58 @@
+body {
+    background-color: hsla(89, 43%, 51%, 0.3);
+}
+h1{
+    color:#92a8d1;
+}
+.tag{
+    margin:50px;
+    color:#92a8d1;
+}
+.tag:hover {
+
+    color: pink;
+
+}
+
+
+/*allcrimecomparison {
+   width:640px;
+   height:480px;
+   background-image:url('korusa.png');
+   margin:0;
+   padding:0;
+}*/
+button {
+    position:relative;
+    margin: auto;
+    width:15%;
+    background-color: #122139;
+    color: white;
+    padding:15px 32px;
+    font-size : 24px;
+    border-radius : 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    }
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+
+}
+.button1:hover {
+    background-color: #122139;
+    color: white;
+
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+
+}
+.button2:hover {
+    background-color: #122139;
+    color: white;
+
+}

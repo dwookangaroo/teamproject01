@@ -3,7 +3,7 @@ from pandas.io.parsers import read_csv
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
-df2 = read_csv('성인재범기간.csv', encoding='cp949')
+df2 = read_csv('../csv/성인재범기간.csv', encoding='cp949')
 plt.rc('font', family='Malgun Gothic', size=7)
 
 label = df2['재범기간']

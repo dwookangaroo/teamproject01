@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 
-df = read_csv('성인재범률.csv', encoding='CP949')
-df2 = read_csv('소년범죄자 재범률.csv', encoding='CP949')
+df = read_csv('../csv/성인재범률.csv', encoding='CP949')
+df2 = read_csv('../csv/소년범죄자 재범률.csv', encoding='CP949')
 plt.rc('font', family='Malgun Gothic', size=7)
 label = df['시점']
 
