@@ -1,9 +1,15 @@
+body {
+    background: linear-gradient( to right,#8e9eab,#eef2f3)
+}
 h1 {
-    padding: 0.7rem;
-    border-left: 5px solid #2196f3;
-    background-color: #122139;
-    color: white;
     width:100%;
+    margin:auto;
+    font-size:40px;
+    color:#eeeeee;
+    padding-bottom:5px;
+    border-left: #00b5ff 8px solid;
+    background-color: #282828;
+    border-radius:5px;
 }
     tr {
     color: black;
@@ -21,14 +27,15 @@ position:relative;
 button {
     position:relative;
     margin: auto;
-    width:15%;
+    width:18%;
     background-color: #122139;
     color: white;
     padding:15px 32px;
     font-size : 24px;
-    border-radius : 8px;
+    border-radius : 5px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    text-overflow: ellipsis;
     }
 .button {
     background-color: white;
@@ -41,12 +48,13 @@ button {
     color: white;
 }
 table {
-    width:100%;
+    width:90%;
     margin-top: 0px;
-    margin-left: 200px;
+    margin-left: 80px;
 }
 footer {
     background-color: #122139;
+    border-left: #00b5ff 8px solid;
     }
 a {
  color: black;
