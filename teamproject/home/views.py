@@ -11,3 +11,6 @@ def usa_view(request):
 
 def recidivism_view(request):
     return render(request, 'recidivism.html')
+
+def motive_view(request):
+    return render(request, 'motive.html')

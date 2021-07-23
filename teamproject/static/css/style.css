@@ -1,3 +1,16 @@
+.title-jpg {
+    position:relative;
+}
+.title-text {
+    position:absolute;
+    z-index:1
+    color:#eeeeee;
+    font-size:52px;
+    top:50px;
+    left:800px;
+    width:520px;
+
+}
 body {
     background: linear-gradient( to right,#8e9eab,#eef2f3)
 }
@@ -27,7 +40,7 @@ position:relative;
 button {
     position:relative;
     margin: auto;
-    width:18%;
+    width:15%;
     background-color: #122139;
     color: white;
     padding:15px 32px;

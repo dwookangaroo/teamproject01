@@ -22,7 +22,7 @@ div {
 button {
     position:relative;
     margin: auto;
-    width:18%;
+    width:15%;
     background-color: #122139;
     color: white;
     padding:15px 32px;
@@ -53,6 +53,11 @@ a1 {
     }
 h2 {
     margin-left:150px;
+    font-size:30px;
+    color:red;
+}
+h3 {
+    font-size:25px;
 }
 h5 {
     text-align:left;

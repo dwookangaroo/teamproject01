@@ -7,6 +7,67 @@
     <link rel="stylesheet" href="{% static 'css/motive.css' %}">
 </head>
 <body>
-
+<h1 align="center" > 소년범죄에 대해서</h1><br>
+    <div align="left">
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범기간</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:motive_view' %}'">범행동기</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄</button>
+        <button type="button" class="button button" align="center">1</button>
+        <button type="button" class="button button" align="center">2</button>
+    </div>
+<br><br>
+    <table>
+        <tr>
+            <th><img src="../../static/img/motive.png" style="margin-left:100px" width="80%" height="80%"></th>
+            <th><img src="../../static/img/motive2.png" style="margin-left:-50px" width="100%" height="80%"></th>
+            <th><a style="margin-left:0px">그래프를 봄으로써 알수있는 사실은 성인범들은 현실에 불만을 가지거나 <br>
+            부주의적으로 범행을 저지르는 경우가 많은데 <br>
+            소년범의 경우 성인범의 경우보다 재물을 노린 범죄가 2배이상 높고<br>
+            우발적인 범죄도 2배가까이 높은걸 볼수있다.
+            </th><br><br>
+        </tr>
+    </table>
+    <p style="margin-left:1030px">기간 : 2013 ~ 2019 출처 : 통계청</p>
+    <hr style="border: solid 1px black">
+    <h3 style="margin-left:150px"> 성인의 재범자 수</h3>
+    <img src="../../static/img/adultmotive.png" style="margin-left:150px"><br>
+    <p style="margin-left:700px">기간 : 2013 ~ 2019 출처 : 통계청</p>
+    <h3 style="margin-left:150px"> 소년범의 재범자 수</h3>
+    <img src="../../static/img/boymotive.png" style="margin-left:150px">
+    <p style="margin-left:700px">기간 : 2013 ~ 2019 출처 : 통계청</p>
+    <br><br><hr style="border: solid 1px black">
+    <br>
+    <h2> 소년범 ‘우발적 범행’ 가장 많아…절도죄 38.6%</h2>
+    <h5>
+    1일 대법원이 발간한 ‘2017년 사법연감’에 따르면 지난해 법원에 접수된 소년보호사건 3만 3738건 중 절도사건은 1만 3038건으로 38.6%를 차지했다.<br>
+    절도사건 다음으로는 폭력행위 등 처벌에 관한 법률 위반이 11.2%(3775건), 사기 9.2%(3096건), 도로교통법위반 6.1%(2071건) 순으로 나타났다.<br>
+    또 성폭력 범죄 처벌 및 피해자 보호 등에 관한 법률 위반·성폭력 범죄의 처벌 등에 관한 특례법 위반 사건은 1070건이며, 이는 지난 10년 중 최다 건수다.<br>
+    범행 원인으로는 우발적 행동이 전체의 45.9%(1383명)로 가장 높게 나타났으며, 호기심 26.5%(798명), 생활비 마련 11.0%(333), 유흥이 9.7%(292명)로 뒤를 이었다.
+    </h5><br><hr style="border: solid 1px black"><br>
+    <h2>‘결손 가정’―‘청소년 일탈’ 상관성 적다</h2>
+    <h5> 만 20세 이하 소년범 상당수는 우발적이거나 호기심 때문에 재산형 범죄를 저질렀으며 5명 중 1명 꼴로 동종 범행을 벌이다 수사기관에 다시 적발되는 것으로 나타났다.<br>
+        하지만 그 동안 고정관념과는 달리 부모 중 한 명 또는 두 명 모두 없는 결손가정이거나 경제적 문제 때문에 나쁜 길로 빠져드는 경우는 드물었다.<br>
+        소년범의 가정환경은 실(양)부모가 있는 경우가 2만8888명(72.8%)으로 3분의 1을 넘었다.<br>
+        이미 결혼을 한 소년범도 2978명(7.5%)인 점을 감안하면 결손 가정 비율은 그리 높지 않았다.<br>
+        실(양)부모가 있는 소년범 9만323명의 범행동기 역시 생활비 마련(2273명)보다는 우발적(2만9984명)이거나 호기심(1만1477명)에 의해 저질러졌다.<br>
+        소년범의 교육 정도는 총 3만9687명 중 2만2070명이 고등학교 재학 이상이었고 중학교 재학·졸업은 1만4470명, 초교 재학·졸업 201명, 미취학 17명 등으로 집계됐다.<br>
+        소년범은 단독(1만251명)보다 학교동창(1만2103명)과 함께 범행할 때가 많았다. 동네친구(9064명), 고향친구(664명), 애인(256명), 친인척(241명), 교도소·소년원동료(122명), 직장동료(58명)도 공범이었다.<br>
+        모두 1만2920명이 재범자였고 7890명은 같은 범죄를, 5030명은 다른 범죄를 저질렀다. 전과 9범 이상도 516명에 달했다.
+</h5><hr style="border: solid 1px black">
+<br><br>
+    <iframe width="500" height="315" style="margin-left:150px" src="https://www.youtube.com/embed/1dzt-DW6G5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/AVaSknPqRAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
+<footer align="center">
+    <address>
+      <a href="http://www.bitacademy.com/"> <img src="http://www.bitacademy.com/Images/Btns/btn_footer_LogoBitacademy.png">
+        </a><br></address>
+        <a1> 서울특별시 서초구 서초대로74길33 비트빌3층</a1> <br>
+        <a1>copyright by © 2021. 강동우, 김준형, 박정환, 이찬우 </a1> <br>
+        <a href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null" style="color:white">청소년범죄통계</a>
+        <a href="https://www.cyber1388.kr:447/" style="color:white">청소년사이버상담센터</a>
+        <a href="https://www.kyci.or.kr/userSite/index.asp" style="color:white">한국청소년상담복지개발원</a>
+        <a href="http://www.bumbang.or.kr/" style="color:white">청소년범죄예방위원전국연합회</a>
+</footer>
 </html>
