@@ -1,57 +1,52 @@
 body {
-    background-color: hsla(89, 43%, 51%, 0.3);
+    background-color:#701616c2;
+    color:white;
 }
 h1{
-    color:#92a8d1;
+    color:white;
 }
+#allcrimecomparison{
+    margin:100px;
+}
+#flaticon{
+    width: 100px;
+    height: 100px;
+    top:0%;
+    left:62%;
+    position:absolute;
+}
+
 .tag{
-    margin:50px;
-    color:#92a8d1;
+    margin-bottom:10px;
+    font-size: 1.5em;
+    margin:30px;
+    color:pink;
 }
 .tag:hover {
-
-    color: pink;
-
+    color: white;
 }
 
-
-/*allcrimecomparison {
-   width:640px;
-   height:480px;
-   background-image:url('korusa.png');
-   margin:0;
-   padding:0;
-}*/
 button {
     position:relative;
     margin: auto;
     width:15%;
-    background-color: #122139;
-    color: white;
+    background-color: #D3D3D3;
+    color: #D3D3D3;
     padding:15px 32px;
     font-size : 24px;
     border-radius : 8px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    margin-bottom:20px;
+
     }
-.button1 {
-    background-color: white;
+.title_button {
+    background-color: #792621;
     color: black;
-    border: 2px solid #008CBA;
+    border: 2px solid #8a0f0f1a;
 
 }
-.button1:hover {
-    background-color: #122139;
-    color: white;
-
-}
-.button2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #008CBA;
-
-}
-.button2:hover {
+.title_button:hover {
     background-color: #122139;
     color: white;
 

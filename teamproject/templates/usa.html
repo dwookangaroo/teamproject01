@@ -11,67 +11,57 @@
             if(idx == "0"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/korusa.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
+                if (x.style.display === "") {
+                    x.style.display == "block";
                 }
             }else if(idx == "1"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/property.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
+
             }else if(idx == "2"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/murder.png' %}";
+                document.querySelector("#allcrimecomparison").src ="{% static 'img/murders.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
+
             }else if(idx == "3"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/assault.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
+
             }else if(idx == "4"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/arson.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
+
             }else if(idx == "5"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/robbery.png' %}";
                 var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
             }
         }
         function hide(){
-            document.querySelector("#allcrimecomparison").src = "";
+            document.querySelector("#allcrimecomparison").src = "{% static 'img/criminal.png' %}";
 
         }
     </script>
 </head>
 
 <body>
-<h1 align="center" > 소년범죄에 대해서</h1><br>
+<h1 align="center" > JUVENILE CRIME</h1><br>
 <div align="left">
-<button type="button" class="button button1" align="center" >재범률</button>
-<button type="button" class="button button2" align="center">재범기간</button>
-<button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄율</button>
-<button type="button" class="button button2" align="center">1</button>
-<button type="button" class="button button2" align="center">2</button>
-<button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
+<button type="button" class="title_button" align="center" >재범률</button>
+<button type="button" class="title_button" align="center">재범기간</button>
+<button type="button" class="title_button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄율</button>
+<button type="button" class="title_button" align="center">강동우</button>
+<button type="button" class="title_button" align="center">조재익</button>
+<button type="button" class="title_button" align="center" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
 </div>
 
 
-<h2 class="tag" onclick="show(0)"> 연도별 한국 미국 총범죄 비교</h2>
-<h2 class="tag" onclick="show(1)">재산범죄</h2>
-<h2 class="tag" onclick="show(2)">살인</h2>
-<h2 class="tag" onclick="show(3)">폭행</h2>
-<h2 class="tag" onclick="show(4)">방화</h2>
-<h2 class="tag" onclick="show(5)">강도</h2>
-     <div align="center"><img id="allcrimecomparison" src=""></div>
+<span class="tag" onclick="show(0)"> 연도별 한국 미국 총범죄 비교</span>
+<span class="tag" onclick="show(1)">재산범죄</span>
+<span class="tag" onclick="show(2)">살인</span>
+<span class="tag" onclick="show(3)">폭행</span>
+<span class="tag" onclick="show(4)">방화</span>
+<span class="tag" onclick="show(5)">강도</span>
+     <div id="pictures"><img id="allcrimecomparison" src="{% static 'img/criminal.png' %}"></div>
+<div><img id="flaticon" src="{% static 'img/police-handcuffs.png' %}"></div>
 
 
 
