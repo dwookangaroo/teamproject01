@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>성인/소년 흉악범죄 분석</title>
+    <link rel="stylesheet" href="{% static 'css/heinous.css' %}">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script>
+        function d1Click(obj){
+            document.querySelector('#frame2').style.display = "block";
+            document.querySelector('#frame2 .anal1 #img1').style.cursor = "pointer";
+            document.querySelector('#frame2 .anal1 #img1').title="클릭해보세요";
+            document.querySelector('#frame2 .anal1 #img1').style.width="100%";
+            document.querySelector('#frame2 .anal1 #img1').style.height="700px";
+            document.querySelector('#frame2 .anal1 #img1').style.margin="0px 0px 0px 0px";
+            document.querySelector('#frame2 .anal2').style.display="none";
+	        document.querySelector('#frame3').style.display = "none";
+	        document.querySelector('#frame4').style.display = "none";
+	        document.querySelector('#frame5').style.display = "none";
+        }
+        function d2Click(obj){
+            document.querySelector('#frame3').style.height = "500px";
+            document.querySelector('#frame3').style.display = "block";
+            document.querySelector('#frame3 .test').style.display = "block";
+            document.querySelector('#frame2').style.display = "none";
+	        document.querySelector('#frame4').style.display = "none";
+	        document.querySelector('#frame5').style.display = "none";
+            document.querySelector('#frame3 .anal1').style.display = "none";
+            document.querySelector('#frame3 .anal2').style.display = "none";
+            document.querySelector('#frame3 .anal3').style.display = "none";
+            document.querySelector('#frame3 .anal4').style.display = "none";
+            document.querySelector('#frame3 .anal5').style.display = "none";
+            document.querySelector('#frame3 .anal6').style.display = "none";
+            document.querySelector('#frame3 .anal7').style.display = "none";
+            document.querySelector('#frame3 .anal8').style.display = "none";
+            document.querySelector('#frame3 .anal9').style.display = "none";
+            document.querySelector('#frame3 .anal10').style.display = "none";
+            document.querySelector('#frame3 .anal11').style.display = "none";
+            document.querySelector('#frame3 .anal12').style.display = "none";
+            document.querySelector('#frame3 .anal13').style.display = "none";
+            document.querySelector('#frame3 .anal14').style.display = "none";
+        }
+
+        function d3Click(){
+            document.querySelector('#frame4').style.display = "block";
+            document.querySelector('#frame4 .anal1').style.display = "block";
+            document.querySelector('#frame4 .anal2 #img5').style.display = "block";
+            document.querySelector('#frame4 .anal3').style.display = "block";
+            document.querySelector('#frame4 .anal4').style.display = "block";
+            document.querySelector('#frame2').style.display = "none";
+            document.querySelector('#frame3').style.display = "none";
+            document.querySelector('#frame5').style.display = "none";
+        }
+
+        function img1Click(obj){
+            obj.style.margin="0px 0px 0px -110px";
+            obj.style.width = "80%";
+            obj.style.height = "600px";
+            obj.style.cursor = "default";
+            obj.title="";
+            document.querySelector('#frame2 .anal2').style.display="block";
+        }
+
+        function memoClick(obj){
+            obj.style.display="none";
+            document.querySelector('#frame2 .anal1 #img1').style.cursor = "pointer";
+            document.querySelector('#frame2 .anal1 #img1').title="클릭해보세요";
+            document.querySelector('#frame2 .anal1 #img1').style.width="100%";
+            document.querySelector('#frame2 .anal1 #img1').style.height="700px";
+            document.querySelector('#frame2 .anal1 #img1').style.margin="0px 0px 0px 0px";
+        }
+
+        function adultClick(obj){
+            document.querySelector('#frame3 .anal1').style.display = "block";
+            document.querySelector('#frame3').style.height = "1000px";
+            document.querySelector('#frame3 .anal2').style.display = "block";
+            document.querySelector('#frame3 .anal3').style.display = "block";
+            document.querySelector('#frame3 .anal4').style.display = "block";
+            document.querySelector('#frame3 .anal5').style.display = "block";
+            document.querySelector('#frame3 .anal6').style.display = "none";
+            document.querySelector('#frame3 .anal7').style.display = "none";
+            document.querySelector('#frame3 .anal8').style.display = "none";
+            document.querySelector('#frame3 .anal9').style.display = "none";
+            document.querySelector('#frame3 .anal10').style.display = "none";
+            document.querySelector('#frame3 .anal11').style.display = "none";
+            document.querySelector('#frame3 .anal12').style.display = "none";
+            document.querySelector('#frame3 .anal13').style.display = "none";
+            document.querySelector('#frame3 .anal14').style.display = "none";
+            document.querySelector('#frame3 .t-table').style.display = "none";
+
+        }
+
+        function childClick(obj){
+            document.querySelector('#frame3').style.height = "1000px";
+            document.querySelector('#frame3 .anal1').style.display = "none";
+            document.querySelector('#frame3 .anal2').style.display = "none";
+            document.querySelector('#frame3 .anal3').style.display = "none";
+            document.querySelector('#frame3 .anal4').style.display = "none";
+            document.querySelector('#frame3 .anal5').style.display = "none";
+            document.querySelector('#frame3 .anal6').style.display = "block";
+            document.querySelector('#frame3 .anal7').style.display = "block";
+            document.querySelector('#frame3 .anal8').style.display = "block";
+            document.querySelector('#frame3 .anal9').style.display = "block";
+            document.querySelector('#frame3 .anal10').style.display = "block";
+            document.querySelector('#frame3 .anal11').style.display = "none";
+            document.querySelector('#frame3 .anal12').style.display = "none";
+            document.querySelector('#frame3 .anal13').style.display = "none";
+            document.querySelector('#frame3 .t-table').style.display = "none";
+            document.querySelector('#frame3 .anal14').style.display = "none";
+
+        }
+
+        function totalClick(obj){
+            document.querySelector('#frame3').style.height = "1000px";
+            document.querySelector('#frame3 .anal1').style.display = "none";
+            document.querySelector('#frame3 .anal2').style.display = "none";
+            document.querySelector('#frame3 .anal3').style.display = "none";
+            document.querySelector('#frame3 .anal4').style.display = "none";
+            document.querySelector('#frame3 .anal5').style.display = "none";
+            document.querySelector('#frame3 .anal6').style.display = "none";
+            document.querySelector('#frame3 .anal7').style.display = "none";
+            document.querySelector('#frame3 .anal8').style.display = "none";
+            document.querySelector('#frame3 .anal9').style.display = "none";
+            document.querySelector('#frame3 .anal10').style.display = "none";
+            document.querySelector('#frame3 .anal11').style.display = "block";
+            document.querySelector('#frame3 .anal12').style.display = "block";
+            document.querySelector('#frame3 .anal13').style.display = "block";
+            document.querySelector('#frame3 .anal14').style.display = "block";
+            document.querySelector('#frame3 .t-table').style.display = "block";
+        }
+
+        function test(){
+            document.querySelector('#frame4').style.display = "none";
+            document.querySelector('#frame5').style.display = "block";
+            document.querySelector('#frame5 .anal1').style.display = "block";
+        }
+<!--        $(document).ready(function(){-->
+<!--            $("#frame3 .adult").click(function(){-->
+<!--                $("#frame3 .anal1").fadeIn("slow");-->
+<!--                $("#frame3 .anal2").fadeIn("slow");-->
+<!--                $("#frame3 .anal3").fadeIn("slow");-->
+<!--                $("#frame3 .anal4").fadeIn("slow");-->
+<!--            });-->
+<!--        });-->
+    </script>
+
+</head>
+<body>
+<h1 align="center"> 소년범죄에 대해서</h1><br>
+<div id="buttons" align="left">
+    <button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:home' %}'">홈화면</button>
+    <button type="button" class="button button1" align="center">재범률</button>
+    <button type="button" class="button button2" align="center">재범기간</button>
+    <button type="button" class="button button2" align="center">해외범죄율</button>
+    <button type="button" class="button button2" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">
+        흉악범죄 분석
+    </button>
+    <button type="button" class="button button2" align="center">
+        게시판
+    </button>
+</div>
+
+<div id="frame1">
+    <div class="d1" onclick="d1Click()">범죄자 수</div>
+    <div class="d2" onclick="d2Click()">범죄 건수</div>
+    <div class="d3" onclick="d3Click()">범죄 종류</div>
+</div>
+
+<div id="frame2">
+    <div class="anal4">◎ 범죄자 수 그래프</p></div>
+    <div class="anal1">
+        <img id="img1" src="{% static 'img/criminal_rate.png' %}" onclick="img1Click(this)" title="클릭해보세요"></div>
+    <div class="anal2" style="display:none; cursor:pointer" onclick="memoClick(this)" title="클릭해보세요">
+        <p style="text-align: center; font-size:25px; font-weight:bold; line-height:20px; margin-top:70px;">&lt 성인|소년 범죄자수 분석 &gt</p>
+        <p style="font-size:20px; line-height:30px; padding:3px 0px 0px 70px;">
+            <span style="margin-left: -15px;">가장 많은 년도</span><br>
+            총 > 2016년<br>
+            성인 > 2019년<br>
+            소년 > 2014년<br><br>
+            <span style="margin-left: -15px;">가장 적은 년도</span><br>
+            총 > 2018년<br>
+            성인 > 2014년<br>
+            소년 > 2019년<br>
+        </p>
+        <p style="font-size:20px; padding:3px 0px 0px 70px;">
+            <span style="margin-left: -15px;"> &gt 성인범 비율</span> <span style="color: red; font-weight:bold;">점차 증가</span><br>
+            <span style="margin-left: -15px;"> &gt 소년범 비율 </span><span style="color: blue; font-weight:bold;">점차 감소</span>
+        </p>
+    </div>
+    <div class="anal5"><p style="font-size:24px; margin: 800px 0px 0px 43px;">◎ 데이터</p></div>
+    <div class="anal3">
+        <table class="t-anal3">
+            <thead><tr>
+                <th title="Field #1">연도</th>
+                <th title="Field #2">총범죄자</th>
+                <th title="Field #3">성인범</th>
+                <th title="Field #9">소년범</th>
+                <th title="Field #15">성인범비율</th>
+                <th title="Field #16">소년범비율</th>
+            </tr></thead>
+            <tbody><tr>
+                <td align="right">2013</td>
+                <td align="right">1896076.0</td>
+                <td align="right">1816801.0</td>
+                <td align="right">91633.0</td>
+                <td align="right">95.82</td>
+                <td align="right">4.83</td>
+            </tr>
+            <tr>
+                <td align="right">2014</td>
+                <td align="right">1846606.0</td>
+                <td align="right">1769039.0</td>
+                <td align="right">77567.0</td>
+                <td align="right">95.8</td>
+                <td align="right">4.2</td>
+            </tr>
+            <tr>
+                <td align="right">2015</td>
+                <td align="right">1914233.0</td>
+                <td align="right">1843199.0</td>
+                <td align="right">71034.0</td>
+                <td align="right">96.29</td>
+                <td align="right">3.71</td>
+            </tr>
+            <tr>
+                <td align="right">2016</td>
+                <td align="right">1982859.0</td>
+                <td align="right">1906859.0</td>
+                <td align="right">76000.0</td>
+                <td align="right">96.17</td>
+                <td align="right">3.83</td>
+            </tr>
+            <tr>
+                <td align="right">2017</td>
+                <td align="right">1917280.0</td>
+                <td align="right">1844526.0</td>
+                <td align="right">72754.0</td>
+                <td align="right">96.21</td>
+                <td align="right">3.79</td>
+            </tr>
+            <tr>
+                <td align="right">2018</td>
+                <td align="right">1755435.0</td>
+                <td align="right">1689300.0</td>
+                <td align="right">66135.0</td>
+                <td align="right">96.23</td>
+                <td align="right">3.77</td>
+            </tr>
+            <tr>
+                <td align="right">2019</td>
+                <td align="right">1819205.0</td>
+                <td align="right">1752962.0</td>
+                <td align="right">66243.0</td>
+                <td align="right">96.36</td>
+                <td align="right">3.64</td>
+            </tr>
+            </tbody></table>
+        <p style="font-size:16px; line-height: 30px; margin: 450px 0px 0px 5px;">* 출처 : 검찰청,「범죄분석통계」</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 50px 5px;">* 대상 : </p>
+    </div>
+
+</div>
+
+<div id="frame3" style="display: none;">
+    <div class="test">
+        <div class="adult" onclick="adultClick()"> 성인범만</div>
+        <div class="child" onclick="childClick()"> 소년범만</div>
+        <div class="total" onclick="totalClick()"> 같이보기</div>
+    </div>
+
+    <div class="anal1" style="display: none;">
+        <img id="img2" src="{% static 'img/a_criminal_to_crime.png' %}">
+    </div>
+    <div class="anal2" style="display: none;">◎ 데이터</p></div>
+    <div class="anal3" style="display: none;">
+        <table class="t-anal3">
+            <thead><tr>
+                <th title="Field #1">연도</th>
+                <th title="Field #3">성인범</th>
+                <th title="Field #5">성인형법범죄</th>
+                <th title="Field #17">성인범죄비율</th>
+            </tr></thead>
+            <tbody><tr>
+                <td align="right">2013</td>
+                <td align="right">1816801.0</td>
+                <td align="right">924021.0</td>
+                <td align="right">50.86</td>
+            </tr>
+            <tr>
+                <td align="right">2014</td>
+                <td align="right">1769039.0</td>
+                <td align="right">920607.0</td>
+                <td align="right">52.04</td>
+            </tr>
+            <tr>
+                <td align="right">2015</td>
+                <td align="right">1843199.0</td>
+                <td align="right">946996.0</td>
+                <td align="right">51.38</td>
+            </tr>
+            <tr>
+                <td align="right">2016</td>
+                <td align="right">1906859.0</td>
+                <td align="right">939490.0</td>
+                <td align="right">49.27</td>
+            </tr>
+            <tr>
+                <td align="right">2017</td>
+                <td align="right">1844526.0</td>
+                <td align="right">918160.0</td>
+                <td align="right">49.78</td>
+            </tr>
+            <tr>
+                <td align="right">2018</td>
+                <td align="right">1689300.0</td>
+                <td align="right">906522.0</td>
+                <td align="right">53.66</td>
+            </tr>
+            <tr>
+                <td align="right">2019</td>
+                <td align="right">1752962.0</td>
+                <td align="right">980279.0</td>
+                <td align="right">55.92</td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="font-size:16px; line-height: 40px; margin: 450px 0px 0px 5px;">* 출처 : 검찰청,「범죄분석통계」</p>
+        <p style="font-size:16px; line-height: 40px; margin: -10px 0px 0px 5px;">* 대상 : 2013 ~ 2019 성인범 중 형법범죄 건수</p>
+        <p style="font-size:16px; line-height: 30px; margin: -10px 0px 0px 5px;">* 형법범죄 : 재산범죄, 강력범죄(흉악), 강력범죄(폭력), 위조범죄, 공무원범죄, 풍속범죄, 과실범죄, 기타형법범죄</p>
+    </div>
+    <div class="anal4" style="display: none;">
+        <p style="text-align: center; font-size:23px; font-weight:bold; margin-top:5px;">&lt 성인범 대비 형법범죄 발생 건 분석 &gt</p>
+        <p style="font-size:18px; line-height:33px; margin-top: -20px; padding:0px 0px 0px 70px;">
+            <span style="margin-left: -15px;">성인범 대비 평균 범죄발생 : 51.84%</span>
+            <br>
+            발생비율 높은 년도 > 2019년<br>
+            발생비율 낮은 년도 > 2016년<br>
+        <p style="font-size:18px; line-height:33px; padding:3px 0px 0px 70px;">
+            <span style="margin-left: -15px;"> &gt 최근 평균보다</span> <span style="color: red; font-weight:bold;">높은 범죄발생률</span> 확인<br>
+        <span style="margin-left: -15px;"> &gt<span style="font-weight:bold;"> 2019년</span> 성인범 비율</span><span style="color: red; font-weight:bold;"> 가장 높음</span><br>
+        <span style="margin-left: -15px;"> &gt<span style="font-weight:bold;"> 2019년</span> 범죄발생 비율</span><span style="color: red; font-weight:bold;"> 가장 높음</span>
+        </p>
+    </div>
+    <div class="anal5" style="display:none;">
+        <p style="font-size:21px; font-weight:bold; text-align: center;">
+            <span style="margin-left: -15px;  line-height:21px;"> &gt 범죄자가 많을 때</span> <span style="color: red; font-weight:bold;">높은 범죄발생률</span> 확인<br>
+    </div>
+
+    <div class="anal6" style="display: none;">
+        <img id="img3" src="{% static 'img/c_criminal_to_crime1.png' %}">
+    </div>
+    <div class="anal7" style="display:none;">◎ 데이터</p></div>
+    <div class="anal8" style="display: none;">
+        <table class="t-anal8">
+            <thead><tr>
+                <th title="Field #1">연도</th>
+                <th title="Field #9">소년범</th>
+                <th title="Field #11">소년형법범죄</th>
+                <th title="Field #18">소년범죄비율</th>
+            </tr></thead>
+            <tbody><tr>
+                <td align="right">2013</td>
+                <td align="right">91633.0</td>
+                <td align="right">83824.0</td>
+                <td align="right">91.48</td>
+            </tr>
+            <tr>
+                <td align="right">2014</td>
+                <td align="right">77567.0</td>
+                <td align="right">59616.0</td>
+                <td align="right">76.86</td>
+            </tr>
+            <tr>
+                <td align="right">2015</td>
+                <td align="right">71034.0</td>
+                <td align="right">53028.0</td>
+                <td align="right">74.65</td>
+            </tr>
+            <tr>
+                <td align="right">2016</td>
+                <td align="right">76000.0</td>
+                <td align="right">58276.0</td>
+                <td align="right">76.68</td>
+            </tr>
+            <tr>
+                <td align="right">2017</td>
+                <td align="right">72754.0</td>
+                <td align="right">56496.0</td>
+                <td align="right">77.65</td>
+            </tr>
+            <tr>
+                <td align="right">2018</td>
+                <td align="right">66135.0</td>
+                <td align="right">52427.0</td>
+                <td align="right">79.27</td>
+            </tr>
+            <tr>
+                <td align="right">2019</td>
+                <td align="right">66243.0</td>
+                <td align="right">52944.0</td>
+                <td align="right">79.92</td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="font-size:16px; line-height: 40px; margin: 450px 0px 0px 5px;">* 출처 : 검찰청,「범죄분석통계」</p>
+        <p style="font-size:16px; line-height: 40px; margin: -10px 0px 0px 5px;">* 대상 : 2013 ~ 2019 소년범 중 형법범죄 건수</p>
+        <p style="font-size:16px; line-height: 30px; margin: -10px 0px 0px 5px;">* 형법범죄 : 재산범죄, 강력범죄(흉악), 강력범죄(폭력), 위조범죄, 공무원범죄, 풍속범죄, 과실범죄, 기타형법범죄</p>
+    </div>
+    <div class="anal9" style="display: none;">
+        <p style="text-align: center; font-size:23px; font-weight:bold; margin-top:5px;">&lt 소년범 대비 형법범죄 발생 건 분석 &gt</p>
+        <p style="font-size:18px; line-height:33px; margin-top: -20px; padding:0px 0px 0px 70px;">
+            <span style="margin-left: -15px;">소년범 대비 평균 범죄발생 : 79.5%</span>
+            <br>
+            발생비율 높은 년도 > 2013년<br>
+            발생비율 낮은 년도 > 2015년<br>
+        <p style="font-size:18px; line-height:33px; padding:3px 0px 0px 70px;">
+            <span style="margin-left: -15px;"> &gt 최근 평균보다</span> <span style="color: red; font-weight:bold;">높은 범죄발생률</span> 확인<br>
+        <span style="margin-left: -15px;"> &gt<span style="font-weight:bold;"> 2014년</span> 소년범 비율</span><span style="color: red; font-weight:bold;"> 가장 높음</span><br>
+        <span style="margin-left: -15px;"> &gt<span style="font-weight:bold;"> 2013년</span> 범죄발생 비율</span><span style="color: red; font-weight:bold;"> 가장 높음</span>
+        </p>
+    </div>
+    <div class="anal10" style="display:none;">
+        <p style="font-size:21px; font-weight:bold; text-align: center;">
+            <span style="margin-left: -15px;  line-height:21px;"> &gt 범죄자가 많다고</span> <span style="color: red; font-weight:bold;">범죄발생률이 높다고</span> 할 수 없음<br>
+    </div>
+
+    <div class="anal11" style="display: none;">
+        <img id="img4" src="{% static 'img/criminal_to_crime1.png' %}">
+    </div>
+    <div class="anal12" style="display:none;">◎ 데이터</p></div>
+    <div class="anal13" style="display: none;">
+        <table class="t-anal13">
+            <thead><tr>
+                <th title="Field #1">연도</th>
+                <th title="Field #3">성인범</th>
+                <th title="Field #5">성인형법범죄</th>
+                <th title="Field #9">소년범</th>
+                <th title="Field #11">소년형법범죄</th>
+                <th title="Field #17">성인범죄비율</th>
+                <th title="Field #18">소년범죄비율</th>
+            </tr></thead>
+            <tbody><tr>
+                <td align="right">2013</td>
+                <td align="right">1816801.0</td>
+                <td align="right">924021.0</td>
+                <td align="right">91633.0</td>
+                <td align="right">83824.0</td>
+                <td align="right">50.86</td>
+                <td align="right">91.48</td>
+            </tr>
+            <tr>
+                <td align="right">2014</td>
+                <td align="right">1769039.0</td>
+                <td align="right">920607.0</td>
+                <td align="right">77567.0</td>
+                <td align="right">59616.0</td>
+                <td align="right">52.04</td>
+                <td align="right">76.86</td>
+            </tr>
+            <tr>
+                <td align="right">2015</td>
+                <td align="right">1843199.0</td>
+                <td align="right">946996.0</td>
+                <td align="right">71034.0</td>
+                <td align="right">53028.0</td>
+                <td align="right">51.38</td>
+                <td align="right">74.65</td>
+            </tr>
+            <tr>
+                <td align="right">2016</td>
+                <td align="right">1906859.0</td>
+                <td align="right">939490.0</td>
+                <td align="right">76000.0</td>
+                <td align="right">58276.0</td>
+                <td align="right">49.27</td>
+                <td align="right">76.68</td>
+            </tr>
+            <tr>
+                <td align="right">2017</td>
+                <td align="right">1844526.0</td>
+                <td align="right">918160.0</td>
+                <td align="right">72754.0</td>
+                <td align="right">56496.0</td>
+                <td align="right">49.78</td>
+                <td align="right">77.65</td>
+            </tr>
+            <tr>
+                <td align="right">2018</td>
+                <td align="right">1689300.0</td>
+                <td align="right">906522.0</td>
+                <td align="right">66135.0</td>
+                <td align="right">52427.0</td>
+                <td align="right">53.66</td>
+                <td align="right">79.27</td>
+            </tr>
+            <tr>
+                <td align="right">2019</td>
+                <td align="right">1752962.0</td>
+                <td align="right">980279.0</td>
+                <td align="right">66243.0</td>
+                <td align="right">52944.0</td>
+                <td align="right">55.92</td>
+                <td align="right">79.92</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="t-table" style="display: none;">
+            <p style="font-size:16px; line-height: 40px; margin: 0px 0px 0px 5px;">* 출처 : 검찰청,「범죄분석통계」</p>
+            <p style="font-size:16px; line-height: 40px; margin: -10px 0px 0px 5px;">* 대상 : 2013 ~ 2019 성인범/소년범 중 형법범죄 건수</p>
+            <p style="font-size:16px; line-height: 30px; margin: -10px 0px 0px 5px;">* 형법범죄 : 재산범죄, 강력범죄(흉악), 강력범죄(폭력), 위조범죄, 공무원범죄, 풍속범죄, 과실범죄, 기타형법범죄</p>
+        </div>
+    <div class="anal14" style="display: none;">
+        <p style="text-align: center; font-size:23px; font-weight:bold; margin-top:5px;">&lt 종합 분석 &gt</p>
+        <p style="font-size:18px; line-height:33px; margin-top: -20px; padding:0px 0px 0px 70px;">
+            <span style="margin-left: -15px;">&gt 앞서 성인범 비율이 <span style="color: red; font-weight:bold;">점점 증가</span>하는 것을 확인</span><br>
+            <span style="margin-left: -15px;">&gt 성인범 증가에 따라 범죄 <span style="color: red; font-weight:bold;">발생률도 증가</span>하는 것을 확인</span><br>
+            <span style="margin-left: -15px;">&gt 범죄자가 많을수록 범죄 발생이 높아진다고 가정할 수 있음</span><br>
+        <p style="font-size:18px; line-height:33px; padding:3px 0px 0px 70px;">
+            <span style="margin-left: -15px;"> &gt 앞서 소년범 비율이 <span style="color: red; font-weight:bold;">발생률이 증가</span>하는 것을 확인</span> <br>
+            <span style="margin-left: -15px;"> &gt 소년범 감소에 비해 범죄 <span style="color: red; font-weight:bold;">점점 감소</span>하는 것을 확인</span> <br>
+            <span style="margin-left: -15px;">&gt 범죄자가 많을수록 범죄 발생률이 높아진다고 가정할 수 없음</span><br>
+        </p>
+    </div>
+</div>
+
+<div id="frame4" style="display: none;">
+    <div class="anal1" style="display:none;"><p style="font-size:24px; margin: 5px 0px 20px 43px;">◎ 성인범/소년범 범죄 종류 그래프</p></div>
+    <div class="anal2">
+        <img id="img5" src="{% static 'img/specific_prime.png' %}">
+    </div>
+    <div class="anal3" style="display:none;">
+        <p style="text-align: center; font-size:25px; font-weight:bold; line-height:20px; margin-top:70px;">&lt 성인|소년 범죄 종류 분석 &gt</p>
+        <p style="font-size:20px; line-height:30px; padding:3px 30px 0px 30px;">
+            <span>&gt 해마다 기타범죄비율 <span style="color:blue; font-weight:bold;">낮아짐</span></span><br>
+            <span>&gt 해마다 재산범죄, 흉악범죄, 폭력범죄비율 <span style="color:red; font-weight:bold;">증가함</span></span><br><br>
+            <span>&gt 2019년(최근) 성인범, 소년범 모두 흉악범죄 비율이 <span style="color:red; font-weight:bold;">가장 높음</span></span><br><br>
+            <span style="font-weight:bold;">&gt <ins>소년범의 비율은 감소하지만 흉악범죄비율은 높아짐에 주목!</ins></span></span><br>
+        </p>
+        <p style="text-align: center; font-size:27px; padding:3px 0px 0px 0px;cursor:pointer" onclick="test()">
+            <span style="margin-left: -15px; color: #f4ffff; text-shadow: 3px 3px 5px #6e6e6e;"><ins> 주요범죄 자세히 보기</ins></span><br>
+        </p>
+    </div>
+    <div class="anal4"><p style="font-size:24px; margin: 700px 0px 0px 43px;">◎ 데이터</p></div>
+    <div class="anal5">
+        <table class="t-anal5">
+            <thead><tr><th title="Field #1">연도</th>
+                <th title="Field #3">성인범</th>
+                <th title="Field #6">성인재산범죄</th>
+                <th title="Field #7">성인흉악범죄</th>
+                <th title="Field #8">성인폭력범죄</th>
+                <th title="Field #9">소년범</th>
+                <th title="Field #12">소년재산범죄</th>
+                <th title="Field #13">소년흉악범죄</th>
+                <th title="Field #14">소년폭력범죄</th>
+                <th title="Field #19">성인재산범죄비율</th>
+                <th title="Field #20">성인흉악범죄비율</th>
+                <th title="Field #21">성인폭력범죄비율</th>
+                <th title="Field #22">소년재산범죄비율</th>
+                <th title="Field #23">소년흉악범죄비율</th>
+                <th title="Field #24">소년폭력범죄비율</th>
+                <th title="Field #25">성인기타범죄율</th>
+                <th title="Field #26">소년기타범죄율</th>
+            </tr></thead>
+            <tbody><tr>
+                <td align="right">2013</td>
+                <td align="right">1816801.0</td>
+                <td align="right">433559.0</td>
+                <td align="right">23997.0</td>
+                <td align="right">313186.0</td>
+                <td align="right">91633.0</td>
+                <td align="right">49952.0</td>
+                <td align="right">2561.0</td>
+                <td align="right">26129.0</td>
+                <td align="right">23.86</td>
+                <td align="right">1.32</td>
+                <td align="right">17.24</td>
+                <td align="right">54.51</td>
+                <td align="right">2.79</td>
+                <td align="right">28.51</td>
+                <td align="right">57.58</td>
+                <td align="right">14.19</td>
+            </tr>
+            <tr>
+                <td align="right">2014</td>
+                <td align="right">1769039.0</td>
+                <td align="right">429591.0</td>
+                <td align="right">25162.0</td>
+                <td align="right">301604.0</td>
+                <td align="right">77567.0</td>
+                <td align="right">63121.0</td>
+                <td align="right">2959.0</td>
+                <td align="right">18234.0</td>
+                <td align="right">95.8</td>
+                <td align="right">1.42</td>
+                <td align="right">17.05</td>
+                <td align="right">44.33</td>
+                <td align="right">3.81</td>
+                <td align="right">23.51</td>
+                <td align="right">57.25</td>
+                <td align="right">28.35</td>
+            </tr>
+            <tr>
+                <td align="right">2015</td>
+                <td align="right">1843199.0</td>
+                <td align="right">437646.0</td>
+                <td align="right">27007.0</td>
+                <td align="right">313873.0</td>
+                <td align="right">71034.0</td>
+                <td align="right">29841.0</td>
+                <td align="right">2504.0</td>
+                <td align="right">16379.0</td>
+                <td align="right">23.74</td>
+                <td align="right">1.47</td>
+                <td align="right">17.03</td>
+                <td align="right">42.01</td>
+                <td align="right">3.53</td>
+                <td align="right">23.06</td>
+                <td align="right">57.76</td>
+                <td align="right">31.4</td>
+            </tr>
+            <tr>
+                <td align="right">2016</td>
+                <td align="right">1906859.0</td>
+                <td align="right">415111.0</td>
+                <td align="right">28144.0</td>
+                <td align="right">319186.0</td>
+                <td align="right">76000.0</td>
+                <td align="right">31629.0</td>
+                <td align="right">3104.0</td>
+                <td align="right">18584.0</td>
+                <td align="right">21.77</td>
+                <td align="right">1.48</td>
+                <td align="right">16.74</td>
+                <td align="right">41.62</td>
+                <td align="right">4.08</td>
+                <td align="right">24.45</td>
+                <td align="right">60.01</td>
+                <td align="right">29.85</td>
+            </tr>
+            <tr>
+                <td align="right">2017</td>
+                <td align="right">1844526.0</td>
+                <td align="right">414592.0</td>
+                <td align="right">31490.0</td>
+                <td align="right">306656.0</td>
+                <td align="right">72754.0</td>
+                <td align="right">28342.0</td>
+                <td align="right">3259.0</td>
+                <td align="right">20411.0</td>
+                <td align="right">22.48</td>
+                <td align="right">1.71</td>
+                <td align="right">16.63</td>
+                <td align="right">38.96</td>
+                <td align="right">4.48</td>
+                <td align="right">28.05</td>
+                <td align="right">59.18</td>
+                <td align="right">28.51</td>
+            </tr>
+            <tr>
+                <td align="right">2018</td>
+                <td align="right">1689300.0</td>
+                <td align="right">427858.0</td>
+                <td align="right">31050.0</td>
+                <td align="right">291677.0</td>
+                <td align="right">66135.0</td>
+                <td align="right">25822.0</td>
+                <td align="right">3267.0</td>
+                <td align="right">19166.0</td>
+                <td align="right">25.33</td>
+                <td align="right">1.84</td>
+                <td align="right">17.27</td>
+                <td align="right">39.04</td>
+                <td align="right">4.94</td>
+                <td align="right">28.98</td>
+                <td align="right">55.56</td>
+                <td align="right">27.04</td>
+            </tr>
+            <tr>
+                <td align="right">2019</td>
+                <td align="right">1752962.0</td>
+                <td align="right">484251.0</td>
+                <td align="right">32453.0</td>
+                <td align="right">291540.0</td>
+                <td align="right">66243.0</td>
+                <td align="right">27062.0</td>
+                <td align="right">3465.0</td>
+                <td align="right">18210.0</td>
+                <td align="right">27.62</td>
+                <td align="right">1.85</td>
+                <td align="right">16.63</td>
+                <td align="right">40.85</td>
+                <td align="right">5.23</td>
+                <td align="right">27.49</td>
+                <td align="right">53.9</td>
+                <td align="right">26.43</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="t-table">
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 0px 5px;">* 출처 : 검찰청,「범죄분석통계」</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 0px 5px; ">* 대상 : 2013 ~ 2019 성인범/소년범 중 재산범죄, 강력(흉악)범죄, 강력(폭력)범죄, 기타범죄 건수</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 0px 5px;">* 재산범죄 : 절도, 장물, 사기, 횡력, 배임, 손괴</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 0px 5px;">* 강력(흉악)범죄 : 살인, 강도, 방화, 성폭력</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 0px 5px;">* 강력(폭력)범죄 : 폭행, 상해, 협박, 공갈 등</p>
+        <p style="font-size:16px; line-height: 30px; margin: 0px 0px 50px 5px;">* 기타범죄 : 위조범죄, 풍속범죄, 과실범죄, 기타 등</p>
+    </div>
+</div>
+
+<div id="frame5" style="display: none;">
+    <div class="anal1" style="">◎ 성인 재산범죄 그래프</div>
+    <div class="anal3" style="">◎ 소년 재산범죄 그래프</p></div>
+    <div class="anal2" style="">
+        <img id="img6" src="{% static 'img/a_crime_heinous1.png' %}">
+        <img id="img7" src="{% static 'img/c_crime_heinous1.png' %}">
+        <div class="anal4">
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 재산범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:20px;">&gt 성인 : 65.46%로 주로 <ins>사기 범죄</ins><br>
+            &gt 소년 : 61.64%로 주로 <ins>절도 범죄</ins><br>
+            &gt 성인,소년 재산범죄는 주로 사기,절도 범죄로 이루어지는 것으로 확인</p>
+        </div>
+    </div>
+
+    <div class="anal5" style="">◎ 성인 흉악범죄 그래프</div>
+    <div class="anal6" style="">◎ 소년 흉악범죄 그래프</p></div>
+    <div class="anal7" style="">
+        <img id="img8" src="{% static 'img/a_crime_heinous2.png' %}">
+        <img id="img9" src="{% static 'img/c_crime_heinous2.png' %}">
+        <div class="anal8">
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 흉악범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:20px;">&gt 성인 : 90.44%로 주로 <ins>성폭력 범죄</ins><br>
+            &gt 소년 : 86.77%로 주로 <ins>성폭력 범죄</ins><br>
+            &gt 성인,소년 흉악범죄는 주로 성폭력 범죄로 이루어지는 것으로 확인</p>
+        </div>
+    </div>
+
+    <div class="anal9" style="">◎ 성인 폭력범죄 그래프</div>
+    <div class="anal10" style="">◎ 소년 폭력범죄 그래프</p></div>
+    <div class="anal11" style="">
+        <img id="img10" src="{% static 'img/a_crime_heinous3.png' %}">
+        <img id="img11" src="{% static 'img/c_crime_heinous3.png' %}">
+        <div class="anal12">
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 폭력범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:30px;">&gt 성인 : 70.54%로 주로 <ins>폭행 범죄</ins><br>
+            &gt 소년 : 54.45%로 주로 <ins>폭행 범죄</ins><br>
+            &gt 성인,소년 폭력범죄는 주로 폭행,상해 범죄로 이루어지는 것으로 확인</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

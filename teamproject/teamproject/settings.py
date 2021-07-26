@@ -76,14 +76,13 @@ WSGI_APPLICATION = 'teamproject.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_db',
-        'USER': 'pjh',
+        'USER': 'l035831',
         'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '3306',
-
     }
 }
 pymysql.version_info=(1,4,2,"final",0)
