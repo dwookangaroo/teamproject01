@@ -1,19 +1,24 @@
 body {
     background-color: #f0f8ff;
     color:white;
+    font-family:"Nanum Gothic";
 }
 h1{
     color:#5b12ff;
 }
+
 #explanation{
+    width:700px;
+    height: 300px;
     position: absolute;
     margin: 10px;
     top: 312px;
     font-size: x-large;
-    color:#5b12ff;
+    color:black;
 }
 #allcrimecomparison{
-    margin:150px;
+    margin:65px;
+    margin-left:100px;
 }
 
 #flaticon1{
@@ -29,6 +34,23 @@ h1{
     top: 77%;
     left: 85%;
     position:absolute;
+}
+#flaticon3{
+    width: 158px;
+    height: 140px;
+    top: 54%;
+    left: 50%;
+    position: absolute;
+}
+#sub{
+    color: black;
+    top: 69%;
+    left: 52%;
+    position: absolute;
+}
+#box{
+    width:500px;
+    height: 200px;
 }
 .tags {
 margin-left:150px;
