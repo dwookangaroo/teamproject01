@@ -2,6 +2,7 @@ body {
     background-color: #f0f8ff;
     overflow-x: hidden;
     width: 100%;
+
     /*overflow-y: auto;*/
     /*background-image: url("../../static/img/bg.jpg");*/
     }
@@ -14,7 +15,7 @@ margin-left:100px;
 }
 button{
             display:inline-block;
-            width:18%;
+            width:15%;
             padding:15px 32px;
             border-radius : 8px;
             background-color:#fff4ca;
@@ -618,3 +619,12 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     left:59%;
     position:absolute;
 }
+
+footer {
+    background-color: #122139;
+    border-left: #00b5ff 8px solid;
+    margin-top:1450px;
+    }
+a1 {
+    color:white;
+    }

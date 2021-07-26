@@ -73,7 +73,7 @@ width:100%;
 
 button{
             display:inline-block;
-            width:18%;
+            width:15%;
             padding:15px 32px;
             border-radius : 8px;
             background-color:#fff4ca;
@@ -86,3 +86,7 @@ button{
             cursor:pointer;
             text-shadow: 0 0 .1em, 0 0 .3em;
             }
+            footer {
+    background-color: #122139;
+    border-left: #00b5ff 8px solid;
+    }

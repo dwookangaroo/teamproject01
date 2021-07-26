@@ -150,11 +150,12 @@
 <h1 align="center" > JUVENILE CRIME</h1><br>
 <div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
 <div id="buttons" align="left">
-        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+    <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">주요범죄</button>
         <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범기간</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:motive_view' %}'">범행동기</button>
         <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄</button>
-        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">흉악범죄</button>
-        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후비교</button>
 
     </button>
 </div>
@@ -748,4 +749,15 @@
     </div>
 </div>
 </body>
+<footer align="center">
+    <address>
+      <a href="http://www.bitacademy.com/"> <img src="http://www.bitacademy.com/Images/Btns/btn_footer_LogoBitacademy.png">
+        </a><br></address>
+        <a1> 서울특별시 서초구 서초대로74길33 비트빌3층</a1> <br>
+        <a1>copyright by © 2021. 강동우, 김준형, 박정환, 이찬우 </a1> <br>
+        <a href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null" style="color:white">청소년범죄통계</a>
+        <a href="https://www.cyber1388.kr:447/" style="color:white">청소년사이버상담센터</a>
+        <a href="https://www.kyci.or.kr/userSite/index.asp" style="color:white">한국청소년상담복지개발원</a>
+        <a href="http://www.bumbang.or.kr/" style="color:white">청소년범죄예방위원전국연합회</a>
+</footer>
 </html>
