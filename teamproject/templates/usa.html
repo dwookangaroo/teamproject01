@@ -10,6 +10,8 @@
         function show(idx){
             if(idx == "0"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/korusa.png' %}";
+                y = document.querySelector("#explanation");
+
                 var x = document.querySelector("#allcrimecomparison");
                 if (x.style.display === "") {
                     x.style.display == "block";
@@ -49,7 +51,7 @@
 <button type="button" class="title_button" align="center">재범기간</button>
 <button type="button" class="title_button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄율</button>
 <button type="button" class="title_button" align="center">강동우</button>
-<button type="button" class="title_button" align="center">조재익</button>
+<button type="button" class="title_button" align="center">강동웅</button>
 <button type="button" class="title_button" align="center" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
 </div>
 
@@ -60,9 +62,12 @@
 <span class="tag" onclick="show(3)">폭행</span>
 <span class="tag" onclick="show(4)">방화</span>
 <span class="tag" onclick="show(5)">강도</span>
-     <div id="pictures"><img id="allcrimecomparison" src="{% static 'img/criminal.png' %}"></div>
-<div><img id="flaticon" src="{% static 'img/police-handcuffs.png' %}"></div>
+     <div id="pictures"><img id="allcrimecomparison" src="{% static 'img/criminal.png' %}">
+        <a id="explanation">과연 청소년범죄 해외와 비교해봤을땐 어떨까?</a>
+     </div>
 
+<div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
+<div><img id="flaticon2" src="{% static 'img/crime-scene.png' %}"></div>
 
 
 
