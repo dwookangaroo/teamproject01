@@ -1,7 +1,10 @@
 body {
-    /*background-color: white;*/
-    background-image: url("../../static/img/bg.jpg");
+    background-color: white;
+    overflow-x: hidden;
+    /*overflow-y: auto;*/
+    /*background-image: url("../../static/img/bg.jpg");*/
     }
+
 h1 {
     padding: 0.7rem;
     border-left: 5px solid #2196f3;
