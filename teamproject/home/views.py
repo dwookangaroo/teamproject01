@@ -10,5 +10,10 @@ def home(request):
 def board_view(request):
     return render(request, 'index.html')
 
+
 def usa_view(request):
     return render(request, 'usa.html')
+
+
+def heinous_view(request):
+    return render(request, 'heinous.html')
