@@ -11,6 +11,8 @@ def home(request):
 def board_view(request):
     return render(request, 'index.html')
 
+def motive_view(request):
+    return render(request, 'motive.html')
 
 
 def usa_view(request):

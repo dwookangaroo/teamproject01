@@ -32,8 +32,8 @@
             padding:4px;
 
             text-align:center;
-            border-top:1px solid yellow;
-            border-bottom:1px solid yellow;
+
+
             }
         article > img{
             float:left;
@@ -46,7 +46,7 @@
             }
         .btn{
             display:inline-block;
-            width:18%;
+            width:15%;
             padding:15px 32px;
             border-radius : 8px;
             background-color:#fff4ca;
@@ -102,11 +102,12 @@
 <h1 align="center" > JUVENILE CRIME</h1><br>
 <div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
 <nav>
-    <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">주요범죄</button>
         <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범기간</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:motive_view' %}'">범행동기</button>
         <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄</button>
-        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">흉악범죄</button>
-        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후비교</button>
 
 </nav>
 <section>
@@ -220,10 +221,10 @@
         </a1><br></address>
         <a1> 서울특별시 서초구 서초대로74길33 비트빌3층</a1> <br>
         <a1>copyright by © 2021. 강동우, 김준형, 박정환, 이찬우 </a1> <br>
-        <a style="color:#00fffb" href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null">청소년범죄통계</a>
-        <a style="color:#00fffb" href="https://www.cyber1388.kr:447/">청소년사이버상담센터</a>
-        <a style="color:#00fffb" href="https://www.kyci.or.kr/userSite/index.asp">한국청소년상담복지개발원</a>
-        <a style="color:#00fffb" href="http://www.bumbang.or.kr/">청소년범죄예방위원전국연합회</a>
+        <a style="color:white" href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null">청소년범죄통계</a>
+        <a style="color:white" href="https://www.cyber1388.kr:447/">청소년사이버상담센터</a>
+        <a style="color:white" href="https://www.kyci.or.kr/userSite/index.asp">한국청소년상담복지개발원</a>
+        <a style="color:white" href="http://www.bumbang.or.kr/">청소년범죄예방위원전국연합회</a>
 </footer>
 </body>
 </html>
