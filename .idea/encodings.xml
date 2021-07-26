@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/teamproject/static/csv/성인범죄.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/teamproject/static/csv/성인재범.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/teamproject/static/csv/소년범죄 재범.csv" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/teamproject/static/csv/소년범죄.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/teamproject/static/csv/소년범죄자 재범률.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/teamproject/static/csv/소년범행동기.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/teamproject/static/csv/소년재범기간.csv" charset="x-windows-949" />
