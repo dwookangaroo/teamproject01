@@ -4,16 +4,17 @@
     {% load static %}
     <meta charset="UTF-8">
     <title>소년범죄</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <h1 align="center" > 소년범죄에 대해서</h1><br>
+    <h1 align="center" > JUVENILE CRIME</h1><br>
+    <div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
     <div align="left">
         <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
         <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범기간</button>
         <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄</button>
-        <button type="button" class="button button" align="center">1</button>
-        <button type="button" class="button button" align="center">2</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">흉악범죄</button>
+        <button type="button" class="button button" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후비교</button>
     </div>
 <br>
 <table cellpadding="0" cellspacing="-50">

@@ -9,19 +9,19 @@
             display:block;
             width:100%;
             height:100%;
-            border:3px dotted grey;
-            background-color:#FBE7C6;
+            background-color: #f0f8ff;
             }
-        header{
-            display:block;
-            width:100%;
-            height:100px;
-            background-color:#FBE7C6;
-            font-size:30px;
-            }
-        header:hover{
-            background-color:black;
-         }
+
+        h1{
+            color:#5b12ff;
+        }
+        #flaticon1{
+            width: 100px;
+            height: 100px;
+            top:0%;
+            left:59%;
+            position:absolute;
+        }
         p{
             padding:25px;
         }
@@ -30,7 +30,7 @@
             width:100%;
             margin:0;
             padding:4px;
-            background-color:black;
+
             text-align:center;
             border-top:1px solid yellow;
             border-bottom:1px solid yellow;
@@ -41,19 +41,20 @@
             width: 430px;
             height: 450px;
             padding:10px;
-            margin:15px;
+            margin-left:70px;
+            margin-top:15px;
             }
         .btn{
             display:inline-block;
-            width:15%;
+            width:18%;
             padding:15px 32px;
             border-radius : 8px;
-            background-color:skyblue;
+            background-color:#fff4ca;
             margin: auto;
             font-size:20px;
             }
         .btn:hover{
-            background-color:#ff9d00;
+            background-color:#122139;
             color:yellow;
             cursor:pointer;
             text-shadow: 0 0 .1em, 0 0 .3em;
@@ -62,7 +63,7 @@
             float:left;
             width:100%;
             height:100%;
-            background-color:#FBE7C6;
+            background-color: #f0f8ff;
             position:relative;
             }
         article{
@@ -85,7 +86,7 @@
         aside{
             float:left;
             width:100%;
-            background-color:#FBE7C6;
+            background-color: #f0f8ff;
             border-top:3px solid grey;
         }
         ul > img{
@@ -97,16 +98,16 @@
     </style>
 </head>
 <body>
-<header style="color:black" align="middle">
-    <p><span style="color:red">소년</span>법 개정 전후 5년간 <span style="color:red">범죄</span>분석</p>
-</header>
+
+<h1 align="center" > JUVENILE CRIME</h1><br>
+<div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
 <nav>
-    <button type="button" class="btn">재범률</button>
-    <button type="button" class="btn">재범기간</button>
-    <button type="button" class="btn">해외범죄율</button>
-    <button type="button" class="btn">1</button>
-    <button type="button" class="btn" onclick="location.href='{% url 'home:compare_view' %}'">개정 전후 비교</button>
-    <button type="button" class="btn" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
+    <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:home' %}'">홈으로</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:recidivism_view' %}'">재범기간</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:usa_view' %}'">해외범죄</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:heinous_view' %}'">흉악범죄</button>
+        <button type="button" class="btn" align="center" onclick="location.href='{% url 'home:compare_view' %}'">개정전후비교</button>
+
 </nav>
 <section>
     <article>

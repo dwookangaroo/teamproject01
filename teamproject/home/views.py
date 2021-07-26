@@ -22,4 +22,6 @@ def heinous_view(request):
 
 def compare_view(request):
     return render(request, 'compare.html')
+def recidivism_view(request):
+    return render(request, 'recidivism.html')
 

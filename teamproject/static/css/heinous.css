@@ -6,49 +6,27 @@ body {
     /*background-image: url("../../static/img/bg.jpg");*/
     }
 
-h1 {
-    padding: 0.7rem;
-    border-left: 5px solid #2196f3;
-    background-color: #122139;
-    color: white;
-    width: 100%;
+h1{
+    color:#5b12ff;
 }
-
-button {
-    position:relative;
-    margin-left:18px;
-    width: 225px;
-    background-color: #122139;
-    color: white;
-    padding:15px 32px;
-    font-size : 24px;
-    border-radius : 8px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    }
-.button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #008CBA;
-
+#buttons {
+margin-left:100px;
 }
-.button1:hover {
-    background-color: #122139;
-    color: white;
-
-}
-.button2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #008CBA;
-
-}
-.button2:hover {
-    background-color: #122139;
-    color: white;
-
-}
-
+button{
+            display:inline-block;
+            width:18%;
+            padding:15px 32px;
+            border-radius : 8px;
+            background-color:#fff4ca;
+            margin:auto;
+            font-size:20px;
+            }
+        button:hover{
+            background-color:#122139;
+            color:yellow;
+            cursor:pointer;
+            text-shadow: 0 0 .1em, 0 0 .3em;
+            }
 table{
     border: 1px solid;
     position: absolute;
@@ -470,12 +448,13 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
 
 #frame4 .t-anal5{
     position:absolute;
+    margin-top:-100px;
 
 }
 #frame4 .t-table{
     position:absolute;
     margin-left:3%;
-    margin-top:1260px;
+    margin-top:1250px;
 }
 
 #frame5{
@@ -632,4 +611,10 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     border: 2px solid;
     margin-top:72%;
 }
-
+#flaticon1{
+    width: 100px;
+    height: 100px;
+    margin-top:-105px;
+    left:59%;
+    position:absolute;
+}
