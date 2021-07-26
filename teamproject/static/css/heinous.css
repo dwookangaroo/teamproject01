@@ -467,17 +467,22 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     margin-left:3%;
     width: 95%;
 }
+
+#frame4 .t-anal5{
+    position:absolute;
+    margin-top:-10%;
+}
 #frame4 .t-table{
     position:absolute;
     margin-left:3%;
-    margin-top:84%;
+    margin-top:68%;
 }
 
 #frame5{
     position: relative;
     margin-top: 30px;
     width:100%;
-    height: 1550px;
+    height: 1600px;
     line-height: 50px;
 }
 
