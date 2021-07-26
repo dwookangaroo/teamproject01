@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>개정 전후 범죄 비교</title>
+    <style>
+        body{
+            display:block;
+            width:100%;
+            height:100%;
+            border:3px dotted grey;
+            background-color:#FBE7C6;
+            }
+        header{
+            display:block;
+            width:100%;
+            height:100px;
+            background-color:#FBE7C6;
+            font-size:30px;
+            }
+        header:hover{
+            background-color:black;
+         }
+        p{
+            padding:25px;
+        }
+        nav{
+            display:inline-block;
+            width:100%;
+            margin:0;
+            padding:4px;
+            background-color:black;
+            text-align:center;
+            border-top:1px solid yellow;
+            border-bottom:1px solid yellow;
+            }
+        article > img{
+            float:left;
+            border:3px solid black;
+            width: 430px;
+            height: 450px;
+            padding:10px;
+            margin:15px;
+            }
+        .btn{
+            display:inline-block;
+            width:15%;
+            padding:15px 32px;
+            border-radius : 8px;
+            background-color:skyblue;
+            margin: auto;
+            font-size:20px;
+            }
+        .btn:hover{
+            background-color:#ff9d00;
+            color:yellow;
+            cursor:pointer;
+            text-shadow: 0 0 .1em, 0 0 .3em;
+            }
+        section {
+            float:left;
+            width:100%;
+            height:100%;
+            background-color:#FBE7C6;
+            position:relative;
+            }
+        article{
+            width:100%;
+            height:500px;
+            border-bottom:5px solid grey;
+            }
+        footer {
+            width:100%;
+            margin:0;
+            padding:0px;
+            background-color:#ddd;
+            text-align:center;
+            background-color: #122139;
+            bottom:0;
+            }
+        a1 {
+            color:white;
+        }
+        aside{
+            float:left;
+            width:100%;
+            background-color:#FBE7C6;
+            border-top:3px solid grey;
+        }
+        ul > img{
+            float:right;
+        }
+        iframe{
+            display:inline-block;
+            }
+    </style>
+</head>
+<body>
+<header style="color:black" align="middle">
+    <p><span style="color:red">소년</span>법 개정 전후 5년간 <span style="color:red">범죄</span>분석</p>
+</header>
+<nav>
+    <button type="button" class="btn">재범률</button>
+    <button type="button" class="btn">재범기간</button>
+    <button type="button" class="btn">해외범죄율</button>
+    <button type="button" class="btn">1</button>
+    <button type="button" class="btn" onclick="location.href='{% url 'home:compare_view' %}'">개정 전후 비교</button>
+    <button type="button" class="btn" onclick="location.href='{% url 'home:board_view' %}'">게시판</button>
+</nav>
+<section>
+    <article>
+        <img src="{% static 'img/before.png' %}">
+        <img src="{% static 'img/after.png' %}">
+        <img src="{% static 'img/indecrease.png' %}">
+    </article>
+    <div style="border-top:2px solid grey">
+        <h3>위 그래프를 보고 알수 있는 사실들</h3>
+        <ul>
+            <li>소년법 개정이후 전혀 기대하던 효과를 보지 못하였다.
+            <li>개정 이후 오히려 살인,특수강도 등의 강력 범죄가 더욱 증가하였다.
+            <li>개정 전후의 범죄 감소는 거의 없다시피 하다.
+            <li>따라서 무조건적인 법의 비판보다 제대로된 사후관리시스템이 필요함을 알 수 있다.
+        </ul>
+        <br>
+        <br>
+        <h3 align="center" style="border:2px solid grey">관련 기사문</h3>
+        <br>
+        <br>
+        <ul>
+            <ol type="A">
+                <li><b>소년법 폐지하면 청소년 범죄 사라질까? 그럴리가&lt프레시안&gt</b></li>
+                <p><b>소년법이 아니라 형벌주의가 문제</b>
+                    <br>
+                    <br>
+                    2007년 소년법 적용 대상 연령을 20세에서 19세로 낮추고 처벌 제외 연령을 12세에서 10세로 낮추었으나,<br>
+                    <br>
+                    2007년 소년범 11만5000명 대비 2008년 12만3000명, 2009년 11만8000명으로 청소년 범죄율의 증감 추이는 크게 변화하지 않았다.<br>
+                    <br>
+                    이후 증감률도 2007년 이전과 대동소이 하다. 오히려 소년범의 재범률만 꾸준히 상승해왔다.<br>
+                    <br>
+                    시야를 형법체계 자체로 넓혀야 한다. 응징, 즉 형벌주의를 중심으로 한 형법체계는 실제 범죄 사건이 발생했을 때 사회적 논의를 오히려 가로막는다.<br>
+                    <br>
+                    해당 공동체와 국가, 사회가 어떤 책임을 져야 하는지 묻지 않고 더 강한 처벌, 예외 없는 법집행을 외치며 가해자에게만 모든 책임을 전가한다.
+                    <br>
+                    <br>
+                <span style="float:right">기사를 더 보고 싶다면?<br>
+                <a style="float:right" href="https://www.pressian.com/pages/articles/169151">기사 바로가기</a></span>
+            </p>
+                <br>
+                <br>
+                <li><b>'소년법'논란 재점화, '개정'이냐 '폐지'냐&lt데일리 굿뉴스&gt</b></li>
+                <p><b>청소년 강력 범죄 날로 증가</b>
+                    <br>
+                    <br>
+                    최근 청소년들의 범죄 행위가 성인 못지않게 대담해지고 흉포해지면서 사회적 불안감이 갈수록 높아지고 있다.<br>
+                    <br>
+                    이 가운데 '인천 중학생 추락사 사건'이 발생하자 가해 학생들을 강력히 처벌해야 한다는 '소년법 폐지' 요구도 재점화되기 시작했다.<br>
+                    <br>
+                    사실 그동안 소년법 개정 및 폐지에 대한 목소리는 청소년 강력범죄가 발생할 때마다 반복되어 왔다. <br>
+                    <br>
+                    청와대 국민청원 게시판에는 지난해 8월 도입 이래 '소년법' 관련 제목의 청원 글만 6,000건에 달했다.<br>
+                    <br>
+                    이중엔 국민 20만 명 이상의 동의를 얻어내 정부의 답변을 받은 청원 글도 여러 건이다.<br>
+                    <br>
+                    현행 소년법은 크게 △범죄소년(만 14세 이상~만 19세 미만) △촉법소년(만 10세 이상~만 14세 미만) △우범소년(만 10세 이상) 세 가지로 구분한다.<br>
+                    <br>
+                    일반적으로 촉법소년과 우범소년은 형사처벌을 받지 않는다. 다만 범죄소년은 소년법과 일반 형법을 모두 적용할 수 있다.<br>
+                    <br>
+                    즉 범죄소년으로 구분되더라도 소년법에서 조사한 결과 금고 이상의 형에 해당하고 범행동기와 죄질이 불량할 경우 일반 형법이 적용돼 성인과 같은 처벌을 받을 수 있다.<br>
+                    <br>
+                    국회 행정안전위원회 소속 더불어민주당 소병훈 의원(경기 광주시갑)이 최근 경찰청에서 제출받은 자료에 따르면, <br>
+                    <br>
+                    지난 2013년부터 2017년까지 5년 간 검거된 형법상 범죄소년은 총 39만 8,917명이었다.<br>
+                    <br>
+                    하루 평균 218명이 검거되는 꼴이다. 범죄 유형으로는 절도가 12만 7,749명으로 가장 많았다.<br>
+                    <br>
+                    이어서 △폭력 10만 5,429명 △지능 5만 6,671명 △강간 1만 28명 등의 순으로 나타났다. 살인을 저지른 범죄소년도 108명에 달했다.<br>
+                    <br>
+                    같은 기간 범죄를 저지른 촉법소년은 3만 8,425명으로, 하루 평균 21명에 이르는 것으로 집계됐다.</p>
+                <br>
+                <br>
+                <span style="float:right">기사를 더 보고싶다면?<br>
+                <a style="float:right" href="http://www.goodnews1.com/news/news_view.asp?seq=84488">기사 바로가기</a></span>
+            </ol>
+        </ul>
+        <br>
+        <br>
+        <h3 align="center" style="border:2px solid grey">관련 뉴스 동영상</h3>
+        <iframe style="padding:50px" align="center" width="560" height="315" src="https://www.youtube.com/embed/dOjIHUNi6kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style="padding:30px" align="center" width="560" height="315" src="https://www.youtube.com/embed/OioU5zeT730" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+    </div>
+    <aside>
+        <h3 style="text-align:center">관련 뉴스 기사 바로가기</h3>
+        <ul>
+            <img alt="" src="http://www.ekoreanews.co.kr/news/photo/201811/28614_35479_3934.png" width="300" height="300">
+            <img alt="" src="http://www.ekoreanews.co.kr/news/photo/201811/28614_35477_3729.png" width="300" height="300">
+            <img alt="" src="https://image.news1.kr/system/photos/2017/9/3/2712113/medium.jpg" width="300" height="300">
+            <ol type="i" style="padding:50px">
+                <li>
+                    <a href="http://www.kjdaily.com/read.php3?aid=1560940216474011005">도 넘은 청소년 강력범죄&lt광주신문&gt</a>
+                </li>
+                <li>
+                    <a href="http://www.ekoreanews.co.kr/news/articleView.html?idxno=28614">청소년 강력범죄 확산, 주요 원인은?&lt이코리아&gt</a>
+                </li>
+                <li>
+                    <a href="https://www.news1.kr/articles/?3093254">'소년법' 오해와 진실...폐지로 청소년 범죄 줄어들까&lt뉴스원&gt</a>
+                </li>
+            </ol>
+        </ul>
+    </aside>
+</section>
+<footer>
+     <address>
+      <a1 href="http://www.bitacademy.com/"> <img src="http://www.bitacademy.com/Images/Btns/btn_footer_LogoBitacademy.png">
+        </a1><br></address>
+        <a1> 서울특별시 서초구 서초대로74길33 비트빌3층</a1> <br>
+        <a1>copyright by © 2021. 강동우, 김준형, 박정환, 이찬우 </a1> <br>
+        <a style="color:#00fffb" href="https://www.nypi.re.kr/archive/board?menuId=MENU00319&siteId=null">청소년범죄통계</a>
+        <a style="color:#00fffb" href="https://www.cyber1388.kr:447/">청소년사이버상담센터</a>
+        <a style="color:#00fffb" href="https://www.kyci.or.kr/userSite/index.asp">한국청소년상담복지개발원</a>
+        <a style="color:#00fffb" href="http://www.bumbang.or.kr/">청소년범죄예방위원전국연합회</a>
+</footer>
+</body>
+</html>
