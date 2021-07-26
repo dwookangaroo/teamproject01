@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <title>한국, 해외 비교</title>
     <link rel="stylesheet" href="{% static 'css/usa.css' %}">
+
     <script>
-
         function show(idx){
-            if(idx == "0"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/korusa.png' %}";
-                y = document.querySelector("#explanation");
 
-                var x = document.querySelector("#allcrimecomparison");
-                if (x.style.display === "") {
-                    x.style.display == "block";
-                }
+            let x = document.querySelector("#explanation");
+            if(idx == "0"){
+
+                document.querySelector("#allcrimecomparison").src ="{% static 'img/korusa.png' %}";
+                x.innerHTML = "미국과 한국의 청소년 인구 100,000명을 기준으로 집계한 연도별 총범죄 건수이다." +
+                            " 미국 총범죄수는 연도가 지날수록 감소하는것을 볼수있다. 반면에 한국은 불규칙적이다.";
+
+
             }else if(idx == "1"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/property.png' %}";
-                var x = document.querySelector("#allcrimecomparison");
+                x.innerHTML ="다른 범죄들과는 다르게 재산범죄건수는 한국이 미국보다 높게 집계된 연도들이 다수있다." +
+                            " 또한, 미국같은경우엔 연도가 지날수록 재산범죄가 눈에띄게 줄고있지만 한국은 그렇지않은것을 볼수있다.";
+
 
             }else if(idx == "2"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/murders.png' %}";
-                var x = document.querySelector("#allcrimecomparison");
+                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
+
 
             }else if(idx == "3"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/assault.png' %}";
-                var x = document.querySelector("#allcrimecomparison");
+                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
+
 
             }else if(idx == "4"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/arson.png' %}";
-                var x = document.querySelector("#allcrimecomparison");
+                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
+
 
             }else if(idx == "5"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/robbery.png' %}";
-                var x = document.querySelector("#allcrimecomparison");
+                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
+
             }
-        }
-        function hide(){
-            document.querySelector("#allcrimecomparison").src = "{% static 'img/criminal.png' %}";
 
         }
+
     </script>
 </head>
 
@@ -57,20 +62,31 @@
     </div>
 
 <div class="tags">
-<span class="tag" onclick="show(0)"> 연도별 한국 미국 총범죄 비교</span>
+<span class="tag" onclick="show(0)">총범죄</span>
 <span class="tag" onclick="show(1)">재산범죄</span>
 <span class="tag" onclick="show(2)">살인</span>
 <span class="tag" onclick="show(3)">폭행</span>
 <span class="tag" onclick="show(4)">방화</span>
 <span class="tag" onclick="show(5)">강도</span>
 </div>
-     <div id="pictures"><img id="allcrimecomparison" src="{% static 'img/criminal.png' %}">
-        <a id="explanation">과연 청소년범죄 해외와 비교해봤을땐 어떨까?</a>
-     </div>
+     <img id="allcrimecomparison" src="{% static 'img/criminal.png' %}">
+        <span id="box">
+        <a id="explanation">청소년범죄...<br><br>
+            미국과 비교해보자
+
+         </a>
+        </span>
+
 
 <div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
 <div><img id="flaticon2" src="{% static 'img/crime-scene.png' %}"></div>
 
+<div>
+    <a href="https://www.ytn.co.kr/_ln/0104_201709071442457265">
+        <img id="flaticon3" src="{% static 'img/newspaper.png' %}">
+    </a>
+    <a id="sub">기사보기</a>
+</div>
 
 
 
