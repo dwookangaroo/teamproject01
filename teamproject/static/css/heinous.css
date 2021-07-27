@@ -462,7 +462,7 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     position: relative;
     margin-top: 30px;
     width:100%;
-    height: 1600px;
+    height: 800px;
     line-height: 50px;
 }
 
@@ -471,23 +471,58 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     left:0;
     margin-left:2%;
     font-size:24px;
+    margin-top:2%;
 }
 
 #frame5 .anal2{
     position: absolute;
     width:100%;
-    height:400px;
+    height:600px;
     margin-top:60px;
 }
 
-#frame5 .anal2 #img6{
+#frame5 .anal2 #img12{
+    position:absolute;
+    width:80%;
+    height:100%;
+    margin-left:10%;
+    margin-top:2%;
+    }
+#frame5 .anal2 #img13{
+    position:absolute;
+    width:100px;
+    height:100px;
+    margin-left:4%;
+    margin-top:22%;
+    }
+    #frame5 .anal2 #img14{
+    position:absolute;
+    width:100px;
+    height:100px;
+    margin-left:89%;
+    margin-top:22%;
+    }
+#frame5 .anal3{
+    position: absolute;
+    left:0;
+    margin-left:2%;
+    font-size:24px;
+    margin-top:701px;
+}
+#frame5 .anal4{
+    position: absolute;
+    width:100%;
+    height:400px;
+    margin-top:768px;
+}
+#frame5 .anal4 #img6{
     position:absolute;
     width:30%;
     height:100%;
     border: 2px solid;
     margin-left:2%;
     }
-#frame5 .anal2 #img7{
+#frame5 .anal4 #img7{
     position:absolute;
     width:30%;
     height:100%;
@@ -497,14 +532,7 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
 
 }
 
-#frame5 .anal3{
-    position:absolute;
-    left:0;
-    margin-left:38%;
-    font-size:24px;
-}
-
-#frame5 .anal4{
+#frame5 .anal5{
     position: absolute;
     width:23%;
     height:400px;
@@ -513,104 +541,22 @@ tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
     border: 2px solid;
 }
 
-#frame5 .anal5{
-    position: absolute;
-    left:0;
-    margin-left:2%;
-    font-size:24px;
-    margin-top:34%;
-}
-
 #frame5 .anal6{
-    position:absolute;
-    left:0;
-    margin-left:38%;
-    font-size:24px;
-    margin-top:34%;
-}
-#frame5 .anal7{
-    position: absolute;
-    width:100%;
-    height:400px;
-
-}
-
-#frame5 .anal7 #img8{
-    position:absolute;
-    width:30%;
-    height:100%;
-    border: 2px solid;
-    margin-left:2%;
-    margin-top:38%;
-    }
-#frame5 .anal7 #img9{
-    position:absolute;
-    width:30%;
-    height:100%;
-    border: 2px solid;
-    left:0;
-    margin-left:38%;
-    margin-top:38%;
-}
-
-#frame5 .anal8{
     position: absolute;
     width:23%;
     height:400px;
     margin-left:73%;
     background: linear-gradient( to bottom, #ffe3ee, #fafad2 );
     border: 2px solid;
-    margin-top:38%;
 }
 
-#frame5 .anal9{
-    position: absolute;
-    left:0;
-    margin-left:2%;
-    font-size:24px;
-    margin-top:68%;
-}
-
-#frame5 .anal10{
-    position:absolute;
-    left:0;
-    margin-left:38%;
-    font-size:24px;
-    margin-top:68%;
-}
-#frame5 .anal11{
-    position: absolute;
-    width:100%;
-    height:400px;
-
-}
-
-#frame5 .anal11 #img10{
-    position:absolute;
-    width:30%;
-    height:100%;
-    border: 2px solid;
-    margin-left:2%;
-    margin-top:72%;
-    }
-#frame5 .anal11 #img11{
-    position:absolute;
-    width:30%;
-    height:100%;
-    border: 2px solid;
-    left:0;
-    margin-left:38%;
-    margin-top:72%;
-}
-
-#frame5 .anal12{
+#frame5 .anal7{
     position: absolute;
     width:23%;
     height:400px;
     margin-left:73%;
     background: linear-gradient( to bottom, #ffe6e6, #ffdcff );
     border: 2px solid;
-    margin-top:72%;
 }
 #flaticon1{
     width: 100px;

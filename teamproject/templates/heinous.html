@@ -7,6 +7,58 @@
     <link rel="stylesheet" href="{% static 'css/heinous.css' %}">
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <script>
+        let i=1;
+
+        function imgClick(idx){
+            if(idx==1){
+                if(i == 3) return;
+                i++;
+            }
+            else{
+                if(i==1) return;
+                i--;
+            }
+
+            let img1=document.querySelector("#frame5 .anal2 #img12");
+            let img2=document.querySelector("#frame5 .anal4 #img6");
+            let img3=document.querySelector("#frame5 .anal4 #img7");
+            let text1=document.querySelector("#frame5 .anal1");
+            let text2=document.querySelector("#frame5 .anal3");
+            console.log(i)
+            if(i==1){
+                img1.src="{% static 'img/only1.png' %}";
+                img2.src="{% static 'img/a_crime_heinous1.png' %}";
+                img3.src="{% static 'img/c_crime_heinous1.png' %}";
+                text1.innerHTML = "◎ 재산범죄 그래프"
+                text2.innerHTML = "◎ 2019년 재산범죄 자세히"
+                document.querySelector("#frame5 .anal7").style.display = "none";
+                document.querySelector("#frame5 .anal6").style.display = "none";
+                document.querySelector("#frame5 .anal5").style.display = "block";
+
+            }
+            else if(i==2){
+                img1.src="{% static 'img/only2.png' %}";
+                img2.src="{% static 'img/a_crime_heinous2.png' %}";
+                img3.src="{% static 'img/c_crime_heinous2.png' %}";
+                text1.innerHTML = "◎ 흉악범죄 그래프"
+                text2.innerHTML = "◎ 2019년 흉악범죄 자세히"
+                document.querySelector("#frame5 .anal5").style.display = "none";
+                document.querySelector("#frame5 .anal7").style.display = "none";
+                document.querySelector("#frame5 .anal6").style.display = "block";
+
+            }
+            else if(i==3){
+                img1.src="{% static 'img/only3.png' %}";
+                img2.src="{% static 'img/a_crime_heinous3.png' %}";
+                img3.src="{% static 'img/c_crime_heinous3.png' %}";
+                text1.innerHTML = "◎ 폭력범죄 그래프"
+                text2.innerHTML = "◎ 2019년 폭력범죄 자세히"
+                document.querySelector("#frame5 .anal7").style.display = "block";
+                document.querySelector("#frame5 .anal6").style.display = "none";
+                document.querySelector("#frame5 .anal5").style.display = "none";
+            }
+        }
+
         function d1Click(obj){
             document.querySelector('#frame2').style.display = "block";
             document.querySelector('#frame2 .anal1 #img1').style.cursor = "pointer";
@@ -40,6 +92,7 @@
             document.querySelector('#frame3 .anal12').style.display = "none";
             document.querySelector('#frame3 .anal13').style.display = "none";
             document.querySelector('#frame3 .anal14').style.display = "none";
+            document.querySelector('#frame3 .t-table').style.display = "none";
         }
 
         function d3Click(){
@@ -51,6 +104,7 @@
             document.querySelector('#frame2').style.display = "none";
             document.querySelector('#frame3').style.display = "none";
             document.querySelector('#frame5').style.display = "none";
+
         }
 
         function img1Click(obj){
@@ -709,44 +763,43 @@
 </div>
 
 <div id="frame5" style="display: none;">
-    <div class="anal1" style="">◎ 성인 재산범죄 그래프</div>
-    <div class="anal3" style="">◎ 소년 재산범죄 그래프</p></div>
+    <div class="anal1" style="">◎ 재산범죄 그래프</div>
     <div class="anal2" style="">
+        <img id="img13" src="{% static 'img/pngegg1.png' %}" onclick="imgClick(0)">
+        <img id="img12" src="{% static 'img/only1.png' %}">
+        <img id="img14" src="{% static 'img/pngegg2.png' %}" onclick="imgClick(1)">
+    </div>
+    <div class="anal3" style="">◎ 2019년 재산범죄 자세히</div>
+    <div class="anal4">
         <img id="img6" src="{% static 'img/a_crime_heinous1.png' %}">
         <img id="img7" src="{% static 'img/c_crime_heinous1.png' %}">
-        <div class="anal4">
-            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 재산범죄 비교&gt</p>
-            <p style="text-align: left;font-size:18px; margin-left:20px;">&gt 성인 : 65.46%로 주로 <ins>사기 범죄</ins><br>
-            &gt 소년 : 61.64%로 주로 <ins>절도 범죄</ins><br>
-            &gt 성인,소년 재산범죄는 주로 사기,절도 범죄로 이루어지는 것으로 확인</p>
+        <div class="anal5">
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:20px;">&lt2019 재산범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:15px;">
+                &gt 소년범죄의 <ins>가장 큰 비율</ins>을 차지하는 재산범죄<br>
+                &gt 2017년 기준으로 <span stype="color:red";>'점차 증가'</span>
+                &gt 성인범 또한 높은 비율로 재산범죄 차지<br>
+                &gt 성인 : 65.46%로 주로 <ins>사기 범죄</ins><br>
+                &gt 소년 : 61.64%로 주로 <ins>절도 범죄</ins></p>
+        </div>
+        <div class="anal6" style="display:none";>
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:30px;">&lt2019 흉악범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:15px;">
+                &gt 성인범, 소년범 모두 흉악범죄 비율 <ins>점차 증가</ins><br>
+                <span style="font-weight:bold;">&gt 최근 2019년 가장 높은 비율 차지</span><br>
+                &gt 성인 : 90.44%로 주로 <ins>성폭력 범죄</ins><br>
+                &gt 소년 : 86.77%로 주로 <ins>성폭력 범죄</ins></p>
+        </div>
+        <div class="anal7" style="display:none";>
+            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:20px;">&lt2019 폭력범죄 비교&gt</p>
+            <p style="text-align: left;font-size:18px; margin-left:15px;">
+                &gt 소년범죄의 <ins>높은 비율</ins>을 차지하는 폭력범죄<br>
+                &gt 성인 : 70.54%로 주로 <ins>폭행 범죄</ins><br>
+                &gt 소년 : 54.45%로 주로 <ins>폭행 범죄</ins><br>
+                &gt 성인,소년 폭력범죄는 주로 폭행범죄로 이루어짐</p>
         </div>
     </div>
 
-    <div class="anal5" style="">◎ 성인 흉악범죄 그래프</div>
-    <div class="anal6" style="">◎ 소년 흉악범죄 그래프</p></div>
-    <div class="anal7" style="">
-        <img id="img8" src="{% static 'img/a_crime_heinous2.png' %}">
-        <img id="img9" src="{% static 'img/c_crime_heinous2.png' %}">
-        <div class="anal8">
-            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 흉악범죄 비교&gt</p>
-            <p style="text-align: left;font-size:18px; margin-left:20px;">&gt 성인 : 90.44%로 주로 <ins>성폭력 범죄</ins><br>
-            &gt 소년 : 86.77%로 주로 <ins>성폭력 범죄</ins><br>
-            &gt 성인,소년 흉악범죄는 주로 성폭력 범죄로 이루어지는 것으로 확인</p>
-        </div>
-    </div>
-
-    <div class="anal9" style="">◎ 성인 폭력범죄 그래프</div>
-    <div class="anal10" style="">◎ 소년 폭력범죄 그래프</p></div>
-    <div class="anal11" style="">
-        <img id="img10" src="{% static 'img/a_crime_heinous3.png' %}">
-        <img id="img11" src="{% static 'img/c_crime_heinous3.png' %}">
-        <div class="anal12">
-            <p style="text-align: center;font-size:22px; font-weight:bold; margin-top:50px;">&lt2019 폭력범죄 비교&gt</p>
-            <p style="text-align: left;font-size:18px; margin-left:30px;">&gt 성인 : 70.54%로 주로 <ins>폭행 범죄</ins><br>
-            &gt 소년 : 54.45%로 주로 <ins>폭행 범죄</ins><br>
-            &gt 성인,소년 폭력범죄는 주로 폭행,상해 범죄로 이루어지는 것으로 확인</p>
-        </div>
-    </div>
 </div>
 </body>
 <footer align="center">
