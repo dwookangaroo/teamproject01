@@ -9,6 +9,8 @@ h1{
         }
     th{
     color:black;
+    width:50%;
+    height:400px;
         }
 
 div {
@@ -33,9 +35,9 @@ button{
             text-shadow: 0 0 .1em, 0 0 .3em;
             }
 table {
-    width:90%;
+    width:100%;
     margin-top: 0px;
-    margin-left: 80px;
+    margin-left: 0px;
 }
 footer {
     background-color: #122139;
