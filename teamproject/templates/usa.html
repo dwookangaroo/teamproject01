@@ -13,35 +13,24 @@
             if(idx == "0"){
 
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/korusa.png' %}";
-                x.innerHTML = "미국과 한국의 청소년 인구 100,000명을 기준으로 집계한 연도별 총범죄 건수이다." +
-                            " 미국 총범죄수는 연도가 지날수록 감소하는것을 볼수있다. 반면에 한국은 불규칙적이다.";
+                x.innerHTML = "- 2013년을 기준으로 미국의 총범죄건수는 감소하는것을 볼수있다." +
+                            " 반면에 한국은 2015년도 이후로 총 건수가 증가하는 모습이다.";
 
 
             }else if(idx == "1"){
                 document.querySelector("#allcrimecomparison").src ="{% static 'img/property.png' %}";
-                x.innerHTML ="다른 범죄들과는 다르게 재산범죄건수는 한국이 미국보다 높게 집계된 연도들이 다수있다." +
+                x.innerHTML ="- 다른 범죄들과는 다르게 재산범죄건수는 한국이 미국보다 높게 집계된 연도들이 다수있다." +
                             " 또한, 미국같은경우엔 연도가 지날수록 재산범죄가 눈에띄게 줄고있지만 한국은 그렇지않은것을 볼수있다.";
 
 
             }else if(idx == "2"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/murders.png' %}";
-                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
+                document.querySelector("#allcrimecomparison").src ="{% static 'img/violent.png' %}";
+                x.innerHTML ="- 살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
 
 
-            }else if(idx == "3"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/assault.png' %}";
-                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
-
-
-            }else if(idx == "4"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/arson.png' %}";
-                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
-
-
-            }else if(idx == "5"){
-                document.querySelector("#allcrimecomparison").src ="{% static 'img/robbery.png' %}";
-                x.innerHTML ="살인, 폭행, 방화, 강도등의 흉악범죄는 한국이 미국에 비해 현저하게 낮은 수치이다.";
-
+            }else if(idx =="3"){
+                document.querySelector("#allcrimecomparison").src ="{% static 'img/inc_rate.png' %}";
+                x.innerHTML ="- 전년에 비해 미국은 계속 감소하고있는 추세이지만 한국은 불규칙적이다.";
             }
 
         }
@@ -64,29 +53,82 @@
 <div class="tags">
 <span class="tag" onclick="show(0)">총범죄</span>
 <span class="tag" onclick="show(1)">재산범죄</span>
-<span class="tag" onclick="show(2)">살인</span>
-<span class="tag" onclick="show(3)">폭행</span>
-<span class="tag" onclick="show(4)">방화</span>
-<span class="tag" onclick="show(5)">강도</span>
+<span class="tag" onclick="show(2)">흉악범죄</span>
+    <span class="tag" onclick="show(3)">증감률</span>
+
 </div>
-     <img id="allcrimecomparison" src="{% static 'img/criminal.png' %}">
-        <span id="box">
-        <a id="explanation">청소년범죄...<br><br>
-            미국과 비교해보자
 
-         </a>
-        </span>
+<img class="flag1" src="{% static 'img/south-korea.png' %}">
+<img class="flag2" src="{% static 'img/united-states.png' %}">
 
 
-<div><img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}"></div>
-<div><img id="flaticon2" src="{% static 'img/crime-scene.png' %}"></div>
+<div style="height: 688px">
+<img id="allcrimecomparison" src="{% static 'img/criminal.png' %}">
+<a id="explanation">
+    한국의 청소년 범죄에 관한 데이터를 미국과 비교해보자
+</a>
+</div>
 
-<div>
+<img id="flaticon1" src="{% static 'img/police-handcuffs.png' %}">
+<img id="flaticon2" src="{% static 'img/crime-scene.png' %}">
+
+<!--<div>
     <a href="https://www.ytn.co.kr/_ln/0104_201709071442457265">
         <img id="flaticon3" src="{% static 'img/newspaper.png' %}">
     </a>
     <a id="sub">기사보기</a>
+</div>-->
+<br>
+<br>
+<hr style="solid 1px black">
+<br>
+<br>
+<div class="text" style="position:relative">
+    <p>
+        <ul id="final">
+    <h2 style="color:black">알수있는것</h2>
+            <br>
+            <br>
+
+            <li class = "list">소년인구 100,000명을 기준으로 총범죄건수는 한국이 낮다.</li>
+            <li class ="list">흉악범죄를 제외한 돈에 관련된 재산범죄는 한국이 더 높은것으로 나타난다.</li>
+            <li class ="list">증감률에서 알수있듯이 미국은 범죄수가 줄고있고 한국은 불규칙하다</li>
+        </ul>
+    </p>
+
 </div>
+<hr>
+<div style="height:400px">
+    <h2 style="color:black; margin-left:30px">관련기사문</h2>
+    <table>
+        <tr>
+            <th>
+                <a href="https://www.ytn.co.kr/_ln/0104_201709071442457265">
+                     <img id="flaticon3" src="{% static 'img/newspaper.png' %}">
+                    <br><br><br><br><br><br>
+                    논란의 소년법, 다른나라들은 어떨까?
+                </a>
+            </th>
+            <th>
+                <a style="margin-left:728px" href="http://www.koreanewstoday.co.kr/news/articleView.html?idxno=63186">
+                    <img id="flaticon4" src="{% static 'img/newspaper1.png' %}">
+                    <br><br><br><br><br><br>
+                    어려지고 잔인해진 소년범죄, 촉법소년 찬반 팽팽
+                </a>
+            </th>
+            <th>
+                <a style="margin-left:1000" href="https://www.news1.kr/articles/?4353529">
+                    <img id="flaticon5" src="{% static 'img/newspaper2.png' %}">
+                    <br><br><br><br><br><br>
+                    어리다고 방치할 수 없어…촉법소년 범죄 강경 따져야
+
+                </a>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
 
 
 
